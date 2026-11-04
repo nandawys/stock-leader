@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A股龙头战法复盘</title>
+<meta name="description" content="A股龙头情绪战法每日复盘 · 仅供参考">
+<style>
+:root{
+  --bg:#0f1419;--card:#1a2332;--border:#2a3544;--text:#e7ecf3;--muted:#8b9bb4;
+  --accent:#3b82f6;--accent2:#22c55e;--warn:#f59e0b;--danger:#ef4444;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  background:var(--bg);color:var(--text);line-height:1.65;
+}
+.wrap{max-width:720px;margin:0 auto;padding:28px 18px 48px}
+header{margin-bottom:28px}
+header h1{font-size:1.65rem;font-weight:700;margin:0 0 8px;letter-spacing:.02em}
+header .sub{color:var(--muted);font-size:.95rem;margin:0}
+.disclaimer{
+  margin:18px 0 28px;padding:12px 14px;border:1px solid var(--border);border-radius:10px;
+  background:#151c27;color:var(--muted);font-size:.88rem;
+}
+.list{display:flex;flex-direction:column;gap:12px}
+.card{
+  display:block;padding:16px 18px;border:1px solid var(--border);border-radius:12px;
+  background:var(--card);text-decoration:none;color:inherit;transition:border-color .15s,transform .15s;
+}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card .date{font-size:.82rem;color:var(--accent);font-weight:600;margin-bottom:4px}
+.card .title{font-size:1.08rem;font-weight:650;margin:0 0 6px}
+.card .meta{font-size:.88rem;color:var(--muted);margin:0}
+.tag{
+  display:inline-block;font-size:.72rem;padding:2px 8px;border-radius:999px;
+  background:#1e3a2f;color:#86efac;margin-left:8px;vertical-align:middle;
+}
+footer{margin-top:40px;color:var(--muted);font-size:.8rem;border-top:1px solid var(--border);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>A股龙头战法复盘</h1>
+    <p class="sub">情绪阶段 · 主线辨识 · 次日可执行指令 · 最新在上</p>
+  </header>
+
+  <div class="disclaimer">
+    <strong>免责声明</strong>：本站内容仅供参考学习，不构成投资建议，不代下单。市场有风险，行动与盈亏由你本人承担。
+  </div>
+
+  <nav class="list" aria-label="复盘列表">
+    <a class="card" href="2026-11-04.html">
+      <div class="date">2026-11-04（周三）<span class="tag">最新</span></div>
+      <h2 class="title">情绪修复（高低切换）· 半导体主线</h2>
+      <p class="meta">涨停 116 · 炸板率 22.1% · 连板高度 3 · 明日指令：北方华创 / 通富微电条件开仓</p>
+    </a>
+  </nav>
+
+  <footer>
+    数据源：akshare 东财涨停系列 · 账号 Pages：nandawys/stock-leader
+  </footer>
+</div>
+</body>
+</html>
