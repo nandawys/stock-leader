@@ -92,7 +92,6 @@ footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color
   <header>
     <h1>A股龙头战法 · 收盘复盘（情绪/资金/量能）</h1>
     <p class="sub">交易日 <strong>2026-11-04</strong>（周三） · 目标交易日 <strong>2026-11-05</strong>（周四） · <span class="strong">修复·半导体</span></p>
-    <span class="badge">Review：主线/风控对·华创条件偏严</span>
     <span class="badge">情绪：修复（高低切换）</span>
     <span class="badge">主线：半导体</span>
     <span class="badge">涨停 116 · 炸板率 22.1%</span>
@@ -102,607 +101,231 @@ footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color
     <strong>免责声明</strong>：本报告仅供参考学习，不构成投资建议，不代下单。市场有风险，行动与盈亏由你本人承担。
   </div>
 
-  <blockquote>
-<p><strong>更新说明（2026-11-05 重排版）</strong>：顺序改为「指令 Review → 明日可执行指令 → 情绪/量能/资金展开 → 总原则」。Review 数据快照约 <strong>11:29 北京时间</strong>（2026-11-05 上午盘中），<strong>非收盘定论</strong>，收盘后可覆核改判。</p>
-</blockquote>
-<hr />
-<h2>1. 指令 Review（对照 2026-11-05 盘中，收盘后可覆核）</h2>
-<blockquote>
-<p>对照下文第 2 节六条指令，用 11-05 盘中快照复盘；数字来自新浪公开行情。</p>
-</blockquote>
-<h3>0. 数据快照时间（北京）</h3>
-<ul>
-<li><strong>快照时间</strong>：2026-11-05 <strong>11:29:51</strong>（北京时间 / Asia/Shanghai，上午盘中，约 11:30 前）</li>
-<li><strong>数据源</strong>：新浪 <code>hq.sinajs.cn</code> 实时字段（开/高/低/现/昨收/成交额）；东财 <code>stock_zh_a_spot_em</code> / 连续 <code>stock_zh_a_hist</code> 当日曾 <strong>Push2 限流</strong>，未再强刷。</li>
-<li><strong>缺口</strong>：个股换手率未单独复核（仅有成交额）；同花顺/东财「半导体」板块指数涨跌幅未拉到官方一行数，板块强弱用 <strong>中军 + 同业样本</strong> 代替（见下）。</li>
-<li><strong>半导体板块（一句话）</strong>：指令票三中军（北方华创 / 通富微电 / 长电科技）盘中相对昨收约 <strong>+5.9% / +7.2% / +4.7%</strong>，同业如雅克科技约 +7.5%、卓胜微约 +3.7%、金安国纪约 +3.9% 等多只翻红，中芯国际仍略弱；整体判断为 <strong>半导体主线资金仍在、中军偏强</strong>（非集体翻绿）。</li>
-</ul>
-<p>昨收一律取指令参考价（与新浪昨收字段一致）：北方华创 535.50、通富微电 42.33、高争民爆 68.95、宝明科技 33.40、云南锗业 75.38、长电科技 51.74。</p>
-<p>理论涨停价（昨收×1.1）：589.05 / 46.56 / 75.85 / 36.74 / 82.92 / 56.91。</p>
-<h3>1. 昨指令 vs 今走势对照表</h3>
-<p>（涨跌幅 = 相对昨收；开% = 今开相对昨收。现价为 11:29:51 快照。）</p>
-<table>
-<thead>
-<tr>
-<th>票</th>
-<th>昨动作</th>
-<th>今开 / 高 / 低 / 现</th>
-<th>相对昨收%（开/高/低/现）</th>
-<th>判定</th>
-<th>一句话原因</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>002371 北方华创</td>
-<td>开多（条件）</td>
-<td>546.21 / 589.00 / 544.01 / 567.30</td>
-<td>+2.00 / +9.99 / +1.59 / <strong>+5.94</strong></td>
-<td><strong>部分对</strong></td>
-<td>主线对、温和高开未破 3% 禁令，但「平～低开 + 回踩昨收」字面未满足，严格条件可能空仓错过摸板行情</td>
-</tr>
-<tr>
-<td>002156 通富微电</td>
-<td>开多备选</td>
-<td>43.14 / 46.56 / 42.57 / 45.38</td>
-<td>+1.91 / +9.99(触涨停) / +0.57 / <strong>+7.21</strong></td>
-<td><strong>对</strong></td>
-<td>微高开&lt;3% + 回踩昨收附近，条件几乎满分兑现，冲涨停且现价已进目标带</td>
-</tr>
-<tr>
-<td>002827 高争民爆</td>
-<td>只观察/不加</td>
-<td>75.84 / 75.84 / 68.66 / 70.33</td>
-<td>+9.99(近一字涨停开) / +9.99 / −0.42 / <strong>+2.00</strong></td>
-<td><strong>对</strong></td>
-<td>涨停开后大幅回落，高度接力不参与完全正确</td>
-</tr>
-<tr>
-<td>002992 宝明科技</td>
-<td>只观察</td>
-<td>33.07 / 33.07 / 30.82 / 32.13</td>
-<td>−0.99 / −0.99 / −7.72 / <strong>−3.80</strong></td>
-<td><strong>对</strong></td>
-<td>弱开弱走，跟风二板观察不做仓避免亏损</td>
-</tr>
-<tr>
-<td>002428 云南锗业</td>
-<td>不加</td>
-<td>79.90 / 82.66 / 77.96 / 79.13</td>
-<td>+6.00 / +9.66 / +3.42 / <strong>+4.97</strong></td>
-<td><strong>部分对</strong></td>
-<td>高开 6% 本就不追；票仍强属辅线溢价，过程纪律对、结果留遗憾</td>
-</tr>
-<tr>
-<td>600584 长电科技</td>
-<td>只观察</td>
-<td>51.35 / 56.10 / 51.00 / 54.19</td>
-<td>−0.75 / +8.43 / −1.43 / <strong>+4.74</strong></td>
-<td><strong>部分对</strong></td>
-<td>封板质量排序次于华创/通富仍成立；微低开后偏强，观察偏保守但未排成第一仓是对的</td>
-</tr>
-</tbody>
-</table>
-<p>成交额（同快照）：华创约 <strong>78.84 亿</strong>、通富约 <strong>52.98 亿</strong>、高争约 <strong>25.45 亿</strong>、宝明约 <strong>2.02 亿</strong>、云南锗业约 <strong>74.30 亿</strong>、长电约 <strong>53.95 亿</strong>。</p>
-<h3>2. 逐票复盘</h3>
-<h4>002371 北方华创｜开多（条件）→ 判定：<strong>部分对</strong>（盘中快照）</h4>
-<ul>
-<li><strong>指令态度</strong>：修复期半导体辨识中军、条件开多——方向正确；板块资金盘中仍在。</li>
-<li><strong>竞价/开盘</strong>：高开 <strong>+2.00%</strong>（546.21）。未触「高开≥3%（约≥551.5）不追」，也不是一字。但积极进场句写的是「平开～低开 3% 内」，<strong>字面不算触发</strong>。</li>
-<li><strong>承接</strong>：最低 544.01（相对昨收约 +1.59%），<strong>没有回到昨收 535.50 附近</strong>；更像开盘附近浅回撤后上冲。最高 <strong>589.00</strong>（距涨停 589.05 仅 0.05），盘中几乎摸板；现价约 +5.94%。</li>
-<li><strong>若按条件执行</strong>：</li>
-<li><strong>严扣字面</strong>（必须平/低开且回踩昨收）→ <strong>可能不进场</strong>，错过摸板与 +5%+ 浮盈路径。</li>
-<li><strong>按「&lt;3% 可关注 + 板块还在」宽松做</strong> → 可在 544～550 一带接；目标「冲涨停或 +7%」盘中高点几乎触及涨停；止损若机械用「跌破开盘价」，低点 544.01 &lt; 开盘 546.21，<strong>开盘附近追入者有被扫止损风险</strong>（回撤约 0.4%）。</li>
-<li><strong>对/错分层</strong>：情绪与主线选择 <strong>对</strong>；仓位态度（中军优先）<strong>对</strong>；进场条件边界（0～3% 高开怎么写）<strong>偏糊/偏严</strong> → 故整体 <strong>部分对</strong>。</li>
-</ul>
-<h4>002156 通富微电｜开多备选 → 判定：<strong>对</strong>（盘中快照）</h4>
-<ul>
-<li><strong>开盘</strong>：+1.91%，落在「平/微高开 &lt;3%」。</li>
-<li><strong>承接</strong>：最低 <strong>42.57</strong>，紧贴昨收 <strong>42.33</strong>（约 +0.57%），符合「回踩昨收承接」。</li>
-<li><strong>路径</strong>：随后最高 <strong>46.56 触涨停</strong>；现价 45.38（约 <strong>+7.21%</strong>），已进入指令「+7%～+10% 减仓 / 冲击涨停留核心」区间。</li>
-<li><strong>若按条件执行</strong>：<strong>会触发进场</strong>；盈亏路径偏「达标」——未看收盘是否回吐。注意：若买入在昨收附近，机械「止损=开盘价 43.14」会把止损挂在成本上方，属于规则缺陷（见 §4），不因此否定本次条件命中。</li>
-<li><strong>分层</strong>：备选定位、弹性大于中军的判断 <strong>对</strong>；与华创二选一/合计≤20% 的仓位纪律今天看来合理（两只同强时更要控总仓）。</li>
-</ul>
-<h4>002827 高争民爆｜只观察/不加 → 判定：<strong>对</strong></h4>
-<ul>
-<li>开盘 <strong>75.84（约 +9.99%）</strong>，接近涨停开/一字博弈区；其后最低 <strong>68.66（−0.42%）</strong>，现价仅约 <strong>+2.00%</strong>——典型「高开兑现后回落」。</li>
-<li>昨因「3 板 + 高度亏钱环境」明确不加：<strong>态度正确，避免高位接力亏损路径</strong>。也验证「高度打开后砸」可作为情绪谨慎信号，但今日半导体中军仍强，说明 <strong>高度退潮 ≠ 全市场空仓</strong>，分层处理有效。</li>
-</ul>
-<h4>002992 宝明科技｜只观察 → 判定：<strong>对</strong></h4>
-<ul>
-<li>低开约 <strong>−0.99%</strong>，最高未过开盘，最低约 <strong>−7.72%</strong>，现价约 <strong>−3.80%</strong>，成交额仅约 2 亿量级偏冷。</li>
-<li>昨因「2 板封弱、偏跟风」只观察：<strong>完全正确</strong>，若硬开仓大概率浮亏。</li>
-</ul>
-<h4>002428 云南锗业｜不加 → 判定：<strong>部分对</strong></h4>
-<ul>
-<li>高开 <strong>+6.00%</strong>，按总原则本就不追；最高约 +9.66%（未封死涨停 82.92），现价约 <strong>+4.97%</strong>，辅线仍有溢价。</li>
-<li><strong>过程</strong>：修复期不做炸板辅线第二主线、且高开过大 —— <strong>纪律对</strong>。</li>
-<li><strong>结果</strong>：票偏强，不加「少赚」——属可接受机会成本。故 <strong>部分对</strong>（过程&gt;结果后悔）。</li>
-</ul>
-<h4>600584 长电科技｜只观察 → 判定：<strong>部分对</strong></h4>
-<ul>
-<li>微低开 <strong>−0.75%</strong>，最低 −1.43%，最高 +8.43%，现价约 <strong>+4.74%</strong>，走势不弱。</li>
-<li>昨因「炸 4 次、封板质量弱于华创/通富」默认观察：排序逻辑 <strong>对</strong>（真进攻仓应在通富条件单）。若给「微低开 + 板块强」升级轻仓，今天也有盈利路径——说明 <strong>观察票缺「升级扳机」</strong>（见 §4）。整体 <strong>部分对</strong>。</li>
-</ul>
-<h3>3. 整体打分（情绪 / 主线 / 分档态度）</h3>
-<table>
-<thead>
-<tr>
-<th>维度</th>
-<th>打分</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>情绪=修复</td>
-<td><strong>对</strong></td>
-<td>高度端（高争）冲高回落，跟风二板（宝明）偏弱；同时涨停结构里的新主线中军仍能上冲，符合「修复而非冰点、也非无脑接力高潮」。</td>
-</tr>
-<tr>
-<td>主线=半导体中军</td>
-<td><strong>对</strong></td>
-<td>华创/通富/长电集体红盘偏强，通富更触涨停；钱仍在半导体，不是一日游假切。</td>
-</tr>
-<tr>
-<td>分档态度（开多/备选/观察/不加）</td>
-<td><strong>偏对</strong></td>
-<td>通富条件单、高争/宝明回避打得准；华创条件措辞与真实「温和高开不回昨收」有缝；锗业/长电过程对、弹性上偏保守。</td>
-</tr>
-</tbody>
-</table>
-<p><strong>一句话总评（盘中）</strong>：主线和风控分层明显加分；最大可改进点是 <strong>「0～3% 高开」进场句写清</strong>，以及 <strong>回踩买入与开盘价止损不要绑死</strong>。收盘若中军大回吐，本节情绪/目标达成度需降级重评。</p>
-<h3>4. 自省要点与下一版模板改动（可执行；改动均未回测）</h3>
-<p>下列均为 <strong>规则调整建议，未经历史回测</strong>，先作模板迭代，再用样本外验证。</p>
-<ol>
-<li><strong>高开分层写死（优先改）</strong>  </li>
-<li>现行：「平开～低开可关注」+「≥3% 不追」，中间 0～3% 高开语义不清（华创今日 +2% 正中灰区）。  </li>
-<li><strong>建议改成</strong>：① 低开 0～3%：优先回踩昨收/分时 VWAP 承接；② 高开 0～2%：允许开盘后确认板块不翻绿再买，不强制回昨收；③ 高开 2%～3%：<strong>必须</strong>回踩昨收或开盘价下 1% 内再接，否则放弃；④ ≥3% 或一字：不追。  </li>
-<li>
-<p>标注：<strong>未回测</strong>。</p>
-</li>
-<li>
-<p><strong>止损与进场价匹配</strong>  </p>
-</li>
-<li>今日通富「回踩昨收再买」后，若仍写「止损=开盘价」，止损可能在成本上方，无意义或被无害扫出。  </li>
-<li><strong>建议</strong>：止损改为「成本 −3%～−5%」与「跌破当日关键分时低点/昨收下沿」二选一，并注明 <strong>回踩单不用开盘价作止损</strong>。  </li>
-<li>
-<p>标注：<strong>未回测</strong>（−3% 还是 −5% 需后验）。</p>
-</li>
-<li>
-<p><strong>中军拆成「辨识中军」与「弹性中军」</strong>  </p>
-</li>
-<li>华创大市值换手克制 vs 通富封资强、弹性大——今日弹性中军条件命中更干净。  </li>
-<li><strong>建议模板</strong>：辨识中军（华创类）仓位可略高但进场更苛刻；弹性中军（通富类）仓位略低、条件更贴近「微高开+回昨收」。二者合计上限保留 ≤20%。  </li>
-<li>
-<p>标注：<strong>未回测</strong>。</p>
-</li>
-<li>
-<p><strong>观察票升级扳机（长电类）</strong>  </p>
-</li>
-<li><strong>建议</strong>：仅当同时满足「竞价平/低开 &lt;1%」「开盘 15～30 分钟内站上昨收」「同主线两只以上中军翻红且未集体炸板」→ 才允许观察票升为 <strong>极轻仓（≤5%）</strong>；否则维持 0%。  </li>
-<li>
-<p>标注：<strong>未回测</strong>；防止观察名单偷偷变相加仓。</p>
-</li>
-<li>
-<p><strong>辅线过滤保持 + 只作情绪探针</strong>  </p>
-</li>
-<li>锗业今日强但高开 6%，「不加」仍建议保留。  </li>
-<li><strong>可执行补充</strong>：辅线高开 &gt;5% 仅记「题材热度仍在」，<strong>禁止</strong>因涨得好事后追责「该加」——复盘表用「过程分/结果分」分开打，避免被结果带偏。  </li>
-<li>
-<p>此条是复盘纪律，不单是开仓规则。</p>
-</li>
-<li>
-<p><strong>数据与 Review 流程</strong>  </p>
-</li>
-<li>东财易限流：次日 Review 优先新浪/腾讯实时字段，东财作备份；快照时间必须写进 §0。  </li>
-<li>收盘后再跑一版「收盘覆核」覆盖盘中判定（尤其华创/通富是否回吐破目标）。</li>
-</ol>
-<h3>附：按指令条件的「假设执行」摘要（盘中，非实盘）</h3>
-<table>
-<thead>
-<tr>
-<th>票</th>
-<th>会否进场（按昨文字）</th>
-<th>路径速写</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>北方华创</td>
-<td>字面偏 <strong>否/灰</strong>；宽松或可</td>
-<td>未回昨收；高点近涨停；现约 +5.9%；开盘价止损有扫损噪音</td>
-</tr>
-<tr>
-<td>通富微电</td>
-<td><strong>是</strong></td>
-<td>回踩昨收后冲涨停；现约 +7.2%，目标带内</td>
-</tr>
-<tr>
-<td>高争民爆</td>
-<td><strong>否（正确）</strong></td>
-<td>涨停开→回落至约 +2%</td>
-</tr>
-<tr>
-<td>宝明科技</td>
-<td><strong>否（正确）</strong></td>
-<td>弱，现约 −3.8%</td>
-</tr>
-<tr>
-<td>云南锗业</td>
-<td><strong>否（纪律正确）</strong></td>
-<td>高开 6%，现仍约 +5%，结果留机会成本</td>
-</tr>
-<tr>
-<td>长电科技</td>
-<td><strong>否（默认观察）</strong></td>
-<td>微低开后偏强约 +4.7%，缺升级条款则空仓</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2>2. 明日（2026-11-05）可执行指令（原文保留）</h2>
-<p>情绪 = <strong>修复</strong> → 最多 <strong>1～2</strong> 个条件开仓 + 观察名单；总仓位从严。进场只看：<strong>竞价高低开、板块资金是否还在、能否回封/承接、量能是否跟上</strong>；高开猛追、一字博弈、高度接力一律不做。</p>
-<h3>指令1｜002371 北方华创｜开多（条件）</h3>
-<table>
-<thead>
-<tr>
-<th>字段</th>
-<th>内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>代码+名称</td>
-<td>002371 北方华创</td>
-</tr>
-<tr>
-<td>动作</td>
-<td><strong>开多</strong>（仅满足进场条件时）</td>
-</tr>
-<tr>
-<td>角色</td>
-<td>半导体中军 / 辨识度龙</td>
-</tr>
-<tr>
-<td>今日收盘参考</td>
-<td>535.50（已涨停）；理论次日涨停约 589.05、跌停约 481.95</td>
-</tr>
-<tr>
-<td>进场</td>
-<td>① 竞价 <strong>平开～低开 3% 以内</strong>可关注；② 开盘后看 <strong>半导体板块资金是否还在</strong>（同类中军不集体翻绿），个股回踩昨收附近能重新承接/回封、量能不崩再买；③ <strong>高开 ≥3%（约≥551.5）不追</strong>；④ 开盘直接一字涨停不追。</td>
-</tr>
-<tr>
-<td>止损</td>
-<td>跌破当日开盘价 <strong>或</strong> 相对成本 <strong>-5%</strong>（先触先走）</td>
-</tr>
-<tr>
-<td>目标</td>
-<td>冲涨停或日内 <strong>+7%</strong> 减半；剩余看能否继续强封/强势收盘，弱转强失败则收盘前清</td>
-</tr>
-<tr>
-<td>建议仓位</td>
-<td>短线专项 <strong>12%～15%</strong></td>
-</tr>
-<tr>
-<td>原因</td>
-<td>半导体主线大市值中军首板，封单靠前、换手克制；修复期优先「钱还在的中军承接」，不做高位杂毛。</td>
-</tr>
-<tr>
-<td>作废</td>
-<td>高开超 3% 追价；竞价大幅低开 <strong>＞5%</strong> 且迅速无承接；半导体竞价集体翻绿且该股弱于板块；盘中主线被砸（半导体领跌、炸板潮起）→ 本指令作废。</td>
-</tr>
-</tbody>
-</table>
-<h3>指令2｜002156 通富微电｜开多（备选；与指令1二选一或更轻）</h3>
-<table>
-<thead>
-<tr>
-<th>字段</th>
-<th>内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>代码+名称</td>
-<td>002156 通富微电</td>
-</tr>
-<tr>
-<td>动作</td>
-<td><strong>开多</strong>（备选；若已按指令1开北方华创，本票最多极轻仓或放弃）</td>
-</tr>
-<tr>
-<td>角色</td>
-<td>半导体封测方向强封标的</td>
-</tr>
-<tr>
-<td>今日收盘参考</td>
-<td>42.33；理论次日涨停约 46.56、跌停约 38.10</td>
-</tr>
-<tr>
-<td>进场</td>
-<td>竞价平/微高开（<strong>&lt;3%</strong>）；开盘后回踩昨收附近能承接、且板块资金仍在再买；<strong>高开≥3% 或 低开＞5%</strong> 不参与。</td>
-</tr>
-<tr>
-<td>止损</td>
-<td>跌破开盘价或成本 <strong>-5%</strong></td>
-</tr>
-<tr>
-<td>目标</td>
-<td><strong>+7%～+10%</strong> 减仓；冲击涨停可留核心</td>
-</tr>
-<tr>
-<td>建议仓位</td>
-<td>专项 <strong>8%～10%</strong>（若与北方华创同持，两者合计 ≤专项 <strong>20%</strong>）</td>
-</tr>
-<tr>
-<td>原因</td>
-<td>今日半导体封板资金前列，弹性大于中军，波动也更大 → 仓位低于北方华创。</td>
-</tr>
-<tr>
-<td>作废</td>
-<td>同指令1主线被砸；自身竞价弱、开盘持续无承接/弱于板块；与指令1合计将破仓位上限时放弃本票。</td>
-</tr>
-</tbody>
-</table>
-<h3>指令3｜002827 高争民爆｜只观察 / 不加</h3>
-<table>
-<thead>
-<tr>
-<th>字段</th>
-<th>内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>代码+名称</td>
-<td>002827 高争民爆</td>
-</tr>
-<tr>
-<td>动作</td>
-<td><strong>只观察 / 不加</strong></td>
-</tr>
-<tr>
-<td>今日收盘参考</td>
-<td>68.95（3板，早盘封死，换手极低）</td>
-</tr>
-<tr>
-<td>进场</td>
-<td>无。一字或高开接力环境差，修复期不追高度。</td>
-</tr>
-<tr>
-<td>止损/目标/仓位</td>
-<td>— / — / <strong>0%</strong></td>
-</tr>
-<tr>
-<td>原因</td>
-<td>空间龙位置在，但昨日起全市场高度断板亏钱效应强，3板接力胜率差。</td>
-</tr>
-<tr>
-<td>作废/关注点</td>
-<td>若竞价打开后迅速砸且无板块承接 → 视为高度继续退潮信号，当天整体更应空仓/极轻。</td>
-</tr>
-</tbody>
-</table>
-<h3>指令4｜002992 宝明科技｜只观察</h3>
-<table>
-<thead>
-<tr>
-<th>字段</th>
-<th>内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>代码+名称</td>
-<td>002992 宝明科技</td>
-</tr>
-<tr>
-<td>动作</td>
-<td><strong>只观察</strong></td>
-</tr>
-<tr>
-<td>今日收盘参考</td>
-<td>33.40（2板，约 14:01 才封，封资偏弱）</td>
-</tr>
-<tr>
-<td>进场</td>
-<td>默认不参与。仅当竞价强、开盘后昨收附近有承接且半导体共振时，才可记入「极端苛刻反抽」观察，仍建议 <strong>不开仓</strong>。</td>
-</tr>
-<tr>
-<td>仓位</td>
-<td><strong>0%</strong></td>
-</tr>
-<tr>
-<td>原因</td>
-<td>偏题材跟风二板且封板质量一般，修复期不优先。</td>
-</tr>
-</tbody>
-</table>
-<h3>指令5｜002428 云南锗业｜不加</h3>
-<table>
-<thead>
-<tr>
-<th>字段</th>
-<th>内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>代码+名称</td>
-<td>002428 云南锗业</td>
-</tr>
-<tr>
-<td>动作</td>
-<td><strong>不加</strong>（贵金属/小金属辅线）</td>
-</tr>
-<tr>
-<td>今日收盘参考</td>
-<td>75.38（首封早，但全日炸 3 次）</td>
-</tr>
-<tr>
-<td>原因</td>
-<td>辅线早盘有辨识，但炸板多次、一日游风险高；修复期不做第二主线仓。</td>
-</tr>
-<tr>
-<td>仓位</td>
-<td><strong>0%</strong></td>
-</tr>
-</tbody>
-</table>
-<h3>指令6｜600584 长电科技｜只观察（封板质量弱于中军）</h3>
-<table>
-<thead>
-<tr>
-<th>字段</th>
-<th>内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>代码+名称</td>
-<td>600584 长电科技</td>
-</tr>
-<tr>
-<td>动作</td>
-<td><strong>只观察 / 默认不加</strong></td>
-</tr>
-<tr>
-<td>今日收盘参考</td>
-<td>51.74（首板，炸 4 次后回封）</td>
-</tr>
-<tr>
-<td>进场</td>
-<td>默认不加。若明日竞价强、开盘后板块资金明确还在且该股能快速回封，才升级为「极轻观察」，仍次于北方华创/通富微电。</td>
-</tr>
-<tr>
-<td>仓位</td>
-<td><strong>0%</strong>（默认）</td>
-</tr>
-<tr>
-<td>原因</td>
-<td>同属半导体，但今日炸板次数多、封板不干净，修复期优先封单质量更好的中军。</td>
-</tr>
-</tbody>
-</table>
-<h3>若你已持有上述股票</h3>
-<ul>
-<li><strong>3板标的</strong>（高争民爆等）：偏 <strong>减仓观望</strong>，反抽减、破开盘价/失守承接走。</li>
-<li><strong>半导体首板中军</strong>：可按指令1/2的止损与目标管理；未开仓者等竞价与承接，不追高开、不博弈一字。</li>
-</ul>
-<hr />
-<hr />
-<h2>3. 情绪阶段：<strong>修复</strong>（高低切换）</h2>
-<p><strong>依据（一两句）</strong>：昨4板龙头阳光照明近跌停（约 <strong>-9.9%</strong>）、七匹狼（昨2板）炸板近 <strong>-10%</strong>、皇台酒业（昨3板）炸板约 <strong>-4.7%</strong>，高度端亏钱效应明确；但今日涨停仍有 <strong>116</strong> 家、炸板率约 <strong>22.1%</strong>，资金切到半导体+贵金属等新方向承接——不是冰点空仓市，也未到可无脑接力的主升/高潮。定性为 <strong>高低切换后的修复</strong>，轻仓做新主线中军回踩承接，严禁追高板/接力杂毛。</p>
-<hr />
-<hr />
-<h2>4. 情绪与量能表</h2>
-<table>
-<thead>
-<tr>
-<th>指标</th>
-<th>数值</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>涨停家数</td>
-<td><strong>116</strong></td>
-<td>已剔 ST / 北交所(含92开头)</td>
-</tr>
-<tr>
-<td>跌停家数</td>
-<td><strong>10</strong></td>
-<td>跌停池</td>
-</tr>
-<tr>
-<td>炸板家数</td>
-<td><strong>33</strong></td>
-<td>炸板池</td>
-</tr>
-<tr>
-<td>炸板率</td>
-<td><strong>22.1%</strong></td>
-<td>炸板/(涨停+炸板)=33/149</td>
-</tr>
-<tr>
-<td>连板高度</td>
-<td><strong>3板</strong></td>
-<td>今日最高连续涨停天数</td>
-</tr>
-<tr>
-<td>连板结构</td>
-<td>3板 <strong>6</strong> / 2板 <strong>6</strong> / 1板 <strong>104</strong></td>
-<td><strong>量在低位、尖在退潮</strong></td>
-</tr>
-<tr>
-<td>昨日涨停数</td>
-<td><strong>48</strong></td>
-<td>previous 池</td>
-</tr>
-<tr>
-<td>晋级数 / 晋级率</td>
-<td><strong>13 / 27.1%</strong></td>
-<td>昨涨停今仍涨停，晋级偏弱</td>
-</tr>
-<tr>
-<td>高度亏钱样本</td>
-<td>阳光照明约-9.9%；七匹狼炸板近-10%；皇台酒业炸板约-4.7%</td>
-<td>高度端退潮确认</td>
-</tr>
-<tr>
-<td>两市成交额</td>
-<td><strong>数据缺口</strong></td>
-<td>箱内 CSV/旧报告无两市总成交；涨停池成交额合计约 <strong>1605亿</strong>（仅涨停标的，非全市场）</td>
-</tr>
-</tbody>
-</table>
-  <img class="chart" src="assets/emotion_20261104.png" alt="2026-11-04 情绪图：涨停/炸板/跌停、连板分布、行业集中">
+  <h2>一、情绪阶段：修复（高低切换）</h2>
+  <p class="lead">昨4板龙头阳光照明近跌停（约 <span class="strong">-9.9%</span>）、七匹狼（昨2板）炸板近 <span class="strong">-10%</span>、皇台酒业（昨3板）炸板约 <span class="strong">-4.7%</span>，高度端亏钱效应明确；但今日涨停仍有 <span class="strong">116</span> 家、炸板率约 <span class="strong">22.1%</span>，资金切到半导体+贵金属等新方向承接——不是冰点空仓市，也未到可无脑接力的主升/高潮。定性为 <span class="strong">高低切换后的修复</span>，轻仓做新主线中军回踩承接，严禁追高板/接力杂毛。</p>
 
-<p>附图参考：<code>emotion_20261104.png</code>（涨停/炸板/跌停 + 连板分布 + 行业集中）。</p>
-<p><strong>读表一句话</strong>：涨停数量尚可、炸板率不极端，但晋级率偏低 + 高度断板亏钱 → 情绪在修复而非主升；仓位与进攻只能跟「钱还在的主线中军」，不能跟高度杂毛。</p>
-<hr />
-<hr />
-<h2>5. 资金与主线（钱在哪）</h2>
-<h3>主线｜半导体设备 / 封测 / 元件（辨识度最高）</h3>
-<ul>
-<li>涨停池「半导体」单行业 <strong>19</strong> 家；叠加元件 <strong>7</strong>、光学光电 <strong>5</strong>、专用设备 <strong>5</strong>、自动化设备 <strong>5</strong>，午后集体封板，资金辨识清晰。</li>
-<li><strong>空间/辨识中军（优先看）</strong></li>
-<li><strong>北方华创（002371）</strong>：首板，收盘 <strong>535.50</strong>；封板资金约 <strong>3.56亿</strong>，换手约 <strong>1.68%</strong>（大市值、换手克制），首封约 <strong>13:47</strong>，未炸板。</li>
-<li><strong>通富微电（002156）</strong>：首板，收盘 <strong>42.33</strong>；封板资金约 <strong>3.80亿</strong>（半导体封资前列），换手约 <strong>6.76%</strong>，首封约 <strong>13:47</strong>，未炸板。</li>
-<li><strong>长电科技（600584）</strong>：首板，收盘 <strong>51.74</strong>；封资约 <strong>2.30亿</strong>，但炸板 <strong>4</strong> 次、末封偏晚 → 封板质量弱于前两者，修复期不当第一仓。</li>
-<li><strong>偏强跟风（轻看/观察）</strong>：金安国纪（002636，炸1次回封）、宝明科技（002992，2板但约 <strong>14:01</strong> 才封、封资约 <strong>0.28亿</strong> 偏弱）、凯迪股份（605288）等——跟风弹性有，但不是修复期主仓。</li>
-</ul>
-<h3>辅线｜贵金属 / 小金属（题材脉冲）</h3>
-<ul>
-<li>贵金属 <strong>11</strong> + 小金属 <strong>3</strong> ≈ <strong>14</strong> 家涨停，多数午后跟风。</li>
-<li><strong>云南锗业（002428）</strong>：早盘有过封板动作（首封约 <strong>09:32</strong>），但全日炸板 <strong>3</strong> 次、末封约 <strong>13:30</strong>，换手约 <strong>13%</strong>、成交额很大 → 辨识尚可，封板质量一般，一日游风险高，<strong>修复期不做第二主线仓</strong>。</li>
-</ul>
-<h3>高度杂毛｜不当主线仓（默认不接力）</h3>
-<ul>
-<li>今日 <strong>3板 6家</strong>：高争民爆、大晟文化、浙文影业、龙版传媒、紫竹高科、闽发铝业。</li>
-<li>高争民爆（002827）早盘一字式封死、换手极低（约 <strong>0.2%</strong>），空间位置在，但全市场高度亏钱刚兑现，<strong>3板接力胜率差 → 只观察、不加</strong>。</li>
-</ul>
-<blockquote>
-<p>概念涨幅榜东财接口当日限流/失败；主线判断依据 = 涨停池行业集中度 + 封板时间/封单资金 + 是否回封，而非概念榜。</p>
-</blockquote>
-<hr />
-<hr />
-<h2>6. 总原则</h2>
-<ol>
-<li><strong>仓位上限</strong>：短线专项总仓 <strong>≤30%</strong>；同时持仓品种建议 <strong>≤2</strong> 只；若出现退潮信号则 <strong>≤10% 或空仓</strong>。</li>
-<li><strong>全天不交易</strong> 若出现任一：</li>
-<li>竞价半导体/贵金属核心股集体大面，且昨日涨停股大量低开 <strong>＞5%</strong>；</li>
-<li>高争民爆等 3 板竞价打开后直线砸，市场再度强化高度亏钱效应；</li>
-<li>你计划开仓的票高开 <strong>＞3%</strong> 且无回踩承接（不追）；</li>
-<li>盘中主线迅速转跌停潮或炸板潮（情绪恶化）。</li>
-<li><strong>默认态度</strong>：修复市 = <strong>等承接、看资金是否还在、不接力、不博弈一字板</strong>。</li>
-<li><strong>数据说明</strong>：akshare 东财涨停系列，交易日 <code>20261104</code>；两市总成交额箱内 <strong>数据缺口</strong>（未编造）；概念涨幅榜接口失败已注明。数字来自当日真实 CSV/<code>metrics_20261104.json</code>。</li>
-</ol>
-<hr />
-<hr />
-<p><em>口径：主看情绪、资金、量能；进场用语为竞价高低开 / 封板·回封·炸板 / 板块资金 / 量能是否跟上。与股指衍生品策略无关。</em></p>
+  <table>
+    <thead>
+      <tr><th>指标</th><th class="num">数值</th><th>备注</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>涨停家数</td><td class="num"><strong>116</strong></td><td>已剔 ST / 北交所(含92开头)</td></tr>
+      <tr><td>跌停家数</td><td class="num"><strong>10</strong></td><td>跌停池</td></tr>
+      <tr><td>炸板家数</td><td class="num"><strong>33</strong></td><td>炸板池</td></tr>
+      <tr><td>炸板率</td><td class="num"><strong>22.1%</strong></td><td>炸板/(涨停+炸板)=33/149</td></tr>
+      <tr><td>连板高度</td><td class="num"><strong>3板</strong></td><td>今日最高连续涨停天数</td></tr>
+      <tr><td>连板结构</td><td class="num"><strong>3板 6 / 2板 6 / 1板 104</strong></td><td><strong>量在低位、尖在退潮</strong></td></tr>
+      <tr><td>昨日涨停数</td><td class="num"><strong>48</strong></td><td>previous 池</td></tr>
+      <tr><td>晋级数 / 晋级率</td><td class="num"><strong>13 / 27.1%</strong></td><td>昨涨停今仍涨停，晋级偏弱</td></tr>
+      <tr><td>高度亏钱样本</td><td colspan="2">阳光照明约-9.9%；七匹狼炸板近-10%；皇台酒业炸板约-4.7% —— 高度端退潮确认</td></tr>
+      <tr><td>两市成交额</td><td colspan="2"><strong>数据缺口</strong>；涨停池成交额合计约 <strong>1605亿</strong>（仅涨停标的，非全市场）</td></tr>
+    </tbody>
+  </table>
+  <p class="muted">读表一句话：涨停数量尚可、炸板率不极端，但晋级率偏低 + 高度断板亏钱 → 情绪在修复而非主升；仓位与进攻只能跟「钱还在的主线中军」，不能跟高度杂毛。</p>
+
+  <img class="chart" src="assets/emotion_20261104.png" alt="2026-11-04 情绪图：涨停/炸板/跌停、连板分布、行业集中">
+  <p class="cap">附图：涨停 / 炸板 / 跌停柱状 + 连板分布 + 行业集中（emotion_20261104.png）</p>
+
+  <h2>二、资金与主线（钱在哪）</h2>
+
+  <h3>主线｜半导体设备 / 封测 / 元件（辨识度最高）</h3>
+  <ul>
+    <li>涨停池「半导体」单行业 <strong>19</strong> 家；叠加元件 <strong>7</strong>、光学光电 <strong>5</strong>、专用设备 <strong>5</strong>、自动化设备 <strong>5</strong>，午后集体封板，资金辨识清晰。</li>
+    <li><strong>空间/辨识中军（优先看）</strong>
+      <ul>
+        <li><strong>北方华创（002371）</strong>：首板，收盘 <strong>535.50</strong>；封板资金约 <strong>3.56亿</strong>，换手约 <strong>1.68%</strong>（大市值、换手克制），首封约 <strong>13:47</strong>，未炸板。</li>
+        <li><strong>通富微电（002156）</strong>：首板，收盘 <strong>42.33</strong>；封板资金约 <strong>3.80亿</strong>（半导体封资前列），换手约 <strong>6.76%</strong>，首封约 <strong>13:47</strong>，未炸板。</li>
+        <li><strong>长电科技（600584）</strong>：首板，收盘 <strong>51.74</strong>；封资约 <strong>2.30亿</strong>，但炸板 <strong>4</strong> 次、末封偏晚 → 封板质量弱于前两者，修复期不当第一仓。</li>
+      </ul>
+    </li>
+    <li><strong>偏强跟风（轻看/观察）</strong>：金安国纪（002636，炸1次回封）、宝明科技（002992，2板但约 <strong>14:01</strong> 才封、封资约 <strong>0.28亿</strong> 偏弱）、凯迪股份（605288）等——跟风弹性有，但不是修复期主仓。</li>
+  </ul>
+
+  <h3>辅线｜贵金属 / 小金属（题材脉冲）</h3>
+  <ul>
+    <li>贵金属 <strong>11</strong> + 小金属 <strong>3</strong> ≈ <strong>14</strong> 家涨停，多数午后跟风。</li>
+    <li><strong>云南锗业（002428）</strong>：早盘有过封板动作（首封约 <strong>09:32</strong>），但全日炸板 <strong>3</strong> 次、末封约 <strong>13:30</strong>，换手约 <strong>13%</strong>、成交额很大 → 辨识尚可，封板质量一般，一日游风险高，<strong>修复期不做第二主线仓</strong>。</li>
+  </ul>
+
+  <h3>高度杂毛｜不当主线仓（默认不接力）</h3>
+  <p>今日 <strong>3板 6家</strong>：高争民爆、大晟文化、浙文影业、龙版传媒、紫竹高科、闽发铝业。</p>
+  <p>高争民爆（002827）早盘一字式封死、换手极低（约 <strong>0.2%</strong>），空间位置在，但全市场高度亏钱刚兑现，<strong>3板接力胜率差 → 只观察、不加</strong>。</p>
+  <p class="muted">概念涨幅榜东财接口当日限流/失败；主线判断依据 = 涨停池行业集中度 + 封板时间/封单资金 + 是否回封，而非概念榜。</p>
+
+  <h2>三、关键标的封板质量（资金口径）</h2>
+  <div class="evidence">
+    <h3>半导体涨停集中度</h3>
+    <p>涨停池 clean 口径共 <strong>116</strong> 家；其中所属行业「半导体」=<strong>19</strong> 家（全市场行业第一）。元件 7、自动化设备 5、专用设备 5、光学光电 5 —— 半导体产业链相关合计约 <strong>41</strong> 家。</p>
+
+    <h3>关键标的（封单 / 换手 / 首封）</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>代码</th><th>名称</th><th>行业</th><th class="num">最新价</th>
+          <th class="num">换手率</th><th class="num">封板资金</th>
+          <th>首次封板</th><th class="num">连板</th><th>备注</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>002371</td><td>北方华创</td><td>半导体</td><td class="num">535.50</td>
+          <td class="num">1.68%</td><td class="num">3.56 亿</td>
+          <td>13:47</td><td class="num">1</td><td>未炸板</td>
+        </tr>
+        <tr>
+          <td>002156</td><td>通富微电</td><td>半导体</td><td class="num">42.33</td>
+          <td class="num">6.76%</td><td class="num">3.80 亿</td>
+          <td>13:47</td><td class="num">1</td><td>未炸板</td>
+        </tr>
+        <tr>
+          <td>600584</td><td>长电科技</td><td>半导体</td><td class="num">51.74</td>
+          <td class="num">5.80%</td><td class="num">2.30 亿</td>
+          <td>14:07</td><td class="num">1</td><td>炸 4 次回封</td>
+        </tr>
+        <tr>
+          <td>002636</td><td>金安国纪</td><td>元件</td><td class="num">64.41</td>
+          <td class="num">10.32%</td><td class="num">1.41 亿</td>
+          <td>13:47</td><td class="num">1</td><td>炸 1 次回封</td>
+        </tr>
+        <tr>
+          <td>002992</td><td>宝明科技</td><td>光学光电</td><td class="num">33.40</td>
+          <td class="num">5.04%</td><td class="num">0.28 亿</td>
+          <td>14:01</td><td class="num">2</td><td>封资偏弱</td>
+        </tr>
+        <tr>
+          <td>002428</td><td>云南锗业</td><td>小金属</td><td class="num">75.38</td>
+          <td class="num">13.15%</td><td class="num">4.09 亿</td>
+          <td>09:32</td><td class="num">1</td><td>炸 3 次</td>
+        </tr>
+        <tr>
+          <td>002827</td><td>高争民爆</td><td>化学制品</td><td class="num">68.95</td>
+          <td class="num">0.20%</td><td class="num">4.20 亿</td>
+          <td>09:25</td><td class="num">3</td><td>早盘封死</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="muted" style="margin:0">北方华创换手克制（1.68%）+ 大市值首板封单靠前，符合修复期「钱还在的中军承接」优先样本。</p>
+  </div>
+
+  <h2>四、明日（2026-11-05）可执行指令</h2>
+  <p class="lead">情绪 = <strong>修复</strong> → 最多 <strong>1～2</strong> 个条件开仓 + 观察名单；总仓位从严。进场只看：<strong>竞价高低开、板块资金是否还在、能否回封/承接、量能是否跟上</strong>；高开猛追、一字博弈、高度接力一律不做。</p>
+
+  <div class="cmd open">
+    <div class="head">
+      <span class="pill open">可开仓 · 条件</span>
+      <h3 class="name">指令1｜002371 北方华创｜开多</h3>
+    </div>
+    <table class="kv">
+      <tr><th>角色</th><td>半导体中军 / 辨识度龙</td></tr>
+      <tr><th>收盘参考</th><td>535.50（已涨停）；理论次日涨停约 589.05、跌停约 481.95</td></tr>
+      <tr><th>进场</th><td>① 竞价 <strong>平开～低开 3% 以内</strong>可关注；② 开盘后看 <strong>半导体板块资金是否还在</strong>（同类中军不集体翻绿），个股回踩昨收附近能重新承接/回封、量能不崩再买；③ <strong>高开 ≥3%（约≥551.5）不追</strong>；④ 开盘直接一字涨停不追。</td></tr>
+      <tr><th>止损</th><td>跌破当日开盘价 <strong>或</strong> 相对成本 <strong>-5%</strong>（先触先走）</td></tr>
+      <tr><th>目标</th><td>冲涨停或日内 <strong>+7%</strong> 减半；剩余看能否继续强封/强势收盘，弱转强失败则收盘前清</td></tr>
+      <tr><th>仓位</th><td>短线专项 <strong>12%～15%</strong></td></tr>
+      <tr><th>原因</th><td>半导体主线大市值中军首板，封单靠前、换手克制；修复期优先「钱还在的中军承接」，不做高位杂毛。</td></tr>
+      <tr><th>作废</th><td>高开超 3% 追价；竞价大幅低开 <strong>＞5%</strong> 且迅速无承接；半导体竞价集体翻绿且该股弱于板块；盘中主线被砸（半导体领跌、炸板潮起）→ 本指令作废。</td></tr>
+    </table>
+  </div>
+
+  <div class="cmd open">
+    <div class="head">
+      <span class="pill open">可开仓 · 备选</span>
+      <span class="pill alt">与指令1二选一或更轻</span>
+      <h3 class="name">指令2｜002156 通富微电｜开多</h3>
+    </div>
+    <table class="kv">
+      <tr><th>角色</th><td>半导体封测方向强封标的</td></tr>
+      <tr><th>收盘参考</th><td>42.33；理论次日涨停约 46.56、跌停约 38.10</td></tr>
+      <tr><th>进场</th><td>竞价平/微高开（<strong>&lt;3%</strong>）；开盘后回踩昨收附近能承接、且板块资金仍在再买；<strong>高开≥3% 或 低开＞5%</strong> 不参与。</td></tr>
+      <tr><th>止损</th><td>跌破开盘价或成本 <strong>-5%</strong></td></tr>
+      <tr><th>目标</th><td><strong>+7%～+10%</strong> 减仓；冲击涨停可留核心</td></tr>
+      <tr><th>仓位</th><td>专项 <strong>8%～10%</strong>（若与北方华创同持，两者合计 ≤专项 <strong>20%</strong>）</td></tr>
+      <tr><th>原因</th><td>今日半导体封板资金前列，弹性大于中军，波动也更大 → 仓位低于北方华创。</td></tr>
+      <tr><th>作废</th><td>同指令1主线被砸；自身竞价弱、开盘持续无承接/弱于板块；与指令1合计将破仓位上限时放弃本票。</td></tr>
+    </table>
+  </div>
+
+  <div class="cmd watch">
+    <div class="head">
+      <span class="pill watch">只观察 · 不加</span>
+      <h3 class="name">指令3｜002827 高争民爆</h3>
+    </div>
+    <table class="kv">
+      <tr><th>动作</th><td><strong>只观察 / 不加</strong></td></tr>
+      <tr><th>收盘参考</th><td>68.95（3板，早盘封死，换手极低）</td></tr>
+      <tr><th>进场</th><td>无。一字或高开接力环境差，修复期不追高度。</td></tr>
+      <tr><th>仓位</th><td><strong>0%</strong></td></tr>
+      <tr><th>原因</th><td>空间龙位置在，但昨日起全市场高度断板亏钱效应强，3板接力胜率差。</td></tr>
+      <tr><th>关注</th><td>若竞价打开后迅速砸且无板块承接 → 视为高度继续退潮信号，当天整体更应空仓/极轻。</td></tr>
+    </table>
+  </div>
+
+  <div class="cmd watch">
+    <div class="head">
+      <span class="pill watch">只观察</span>
+      <h3 class="name">指令4｜002992 宝明科技</h3>
+    </div>
+    <table class="kv">
+      <tr><th>动作</th><td><strong>只观察</strong></td></tr>
+      <tr><th>收盘参考</th><td>33.40（2板，约 14:01 才封，封资偏弱）</td></tr>
+      <tr><th>进场</th><td>默认不参与。仅当竞价强、开盘后昨收附近有承接且半导体共振时，才可记入「极端苛刻反抽」观察，仍建议 <strong>不开仓</strong>。</td></tr>
+      <tr><th>仓位</th><td><strong>0%</strong></td></tr>
+      <tr><th>原因</th><td>偏题材跟风二板且封板质量一般，修复期不优先。</td></tr>
+    </table>
+  </div>
+
+  <div class="cmd watch">
+    <div class="head">
+      <span class="pill watch">不加</span>
+      <h3 class="name">指令5｜002428 云南锗业</h3>
+    </div>
+    <table class="kv">
+      <tr><th>动作</th><td><strong>不加</strong>（贵金属/小金属辅线）</td></tr>
+      <tr><th>收盘参考</th><td>75.38（首封早，但全日炸 3 次）</td></tr>
+      <tr><th>仓位</th><td><strong>0%</strong></td></tr>
+      <tr><th>原因</th><td>辅线早盘有辨识，但炸板多次、一日游风险高；修复期不做第二主线仓。</td></tr>
+    </table>
+  </div>
+
+  <div class="cmd watch">
+    <div class="head">
+      <span class="pill watch">只观察 · 默认不加</span>
+      <h3 class="name">指令6｜600584 长电科技</h3>
+    </div>
+    <table class="kv">
+      <tr><th>动作</th><td><strong>只观察 / 默认不加</strong></td></tr>
+      <tr><th>收盘参考</th><td>51.74（首板，炸 4 次后回封）</td></tr>
+      <tr><th>进场</th><td>默认不加。若明日竞价强、开盘后板块资金明确还在且该股能快速回封，才升级为「极轻观察」，仍次于北方华创/通富微电。</td></tr>
+      <tr><th>仓位</th><td><strong>0%</strong>（默认）</td></tr>
+      <tr><th>原因</th><td>同属半导体，但今日炸板次数多、封板不干净，修复期优先封单质量更好的中军。</td></tr>
+    </table>
+  </div>
+
+  <div class="rules">
+    <strong>若你已持有上述股票</strong>
+    <ul>
+      <li><strong>3板标的</strong>（高争民爆等）：偏 <strong>减仓观望</strong>，反抽减、破开盘价/失守承接走。</li>
+      <li><strong>半导体首板中军</strong>：可按指令1/2的止损与目标管理；未开仓者等竞价与承接，不追高开、不博弈一字。</li>
+    </ul>
+  </div>
+
+  <h2>五、总原则</h2>
+  <div class="rules">
+    <ol>
+      <li><strong>仓位上限</strong>：短线专项总仓 <strong>≤30%</strong>；同时持仓品种建议 <strong>≤2</strong> 只；若出现退潮信号则 <strong>≤10% 或空仓</strong>。</li>
+      <li><strong>全天不交易</strong> 若出现任一：
+        <ul>
+          <li>竞价半导体/贵金属核心股集体大面，且昨日涨停股大量低开 <strong>＞5%</strong>；</li>
+          <li>高争民爆等 3 板竞价打开后直线砸，市场再度强化高度亏钱效应；</li>
+          <li>你计划开仓的票高开 <strong>＞3%</strong> 且无回踩承接（不追）；</li>
+          <li>盘中主线迅速转跌停潮或炸板潮（情绪恶化）。</li>
+        </ul>
+      </li>
+      <li><strong>默认态度</strong>：修复市 = <strong>等承接、看资金是否还在、不接力、不博弈一字板</strong>。</li>
+      <li><strong>数据说明</strong>：akshare 东财涨停系列，交易日 <code>20261104</code>；两市总成交额箱内数据缺口（未编造）；概念涨幅榜接口失败已注明。数字来自当日真实 CSV。</li>
+    </ol>
+  </div>
+
   <footer>
     口径：主看情绪、资金、量能 · 进场用语为竞价高低开 / 封板·回封·炸板 / 板块资金 / 量能是否跟上 ·
     <a href="index.html">返回首页</a>
