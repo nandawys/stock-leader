@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2026-11-18 · 退潮末期·跌停收敛｜A股龙头情绪资金复盘</title>
+<meta name="description" content="2026-11-18 收盘复盘（情绪/资金/量能）：退潮末期、涨停40、跌停39、晋级率22.2%、炸板率37.5%；明日指令：默认空仓 / 算力PCB只观察不加、不抄家电跌停">
+<style>
+:root{
+  --bg:#0f1419;--card:#1a2332;--border:#2a3544;--text:#e7ecf3;--muted:#8b9bb4;
+  --accent:#3b82f6;--ok:#22c55e;--ok-bg:#12261c;--ok-bd:#1e4d36;
+  --watch:#f59e0b;--watch-bg:#2a2110;--watch-bd:#5c4518;
+  --danger:#ef4444;--table-head:#151c27;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  background:var(--bg);color:var(--text);line-height:1.65;font-size:15.5px;
+}
+.wrap{max-width:820px;margin:0 auto;padding:24px 16px 56px}
+a{color:var(--accent)}
+.topnav{margin-bottom:18px;font-size:.9rem}
+.topnav a{text-decoration:none}
+header h1{font-size:1.45rem;margin:0 0 6px;font-weight:700}
+header .sub{color:var(--muted);margin:0 0 14px;font-size:.92rem}
+.badge{
+  display:inline-block;padding:3px 10px;border-radius:999px;font-size:.78rem;font-weight:650;
+  background:#1e3a5f;color:#93c5fd;margin-right:6px;margin-bottom:6px;
+}
+.badge.ok{background:#14532d;color:#86efac}
+.badge.danger{background:#3f1d1d;color:#fca5a5}
+.badge.warn{background:#78350f;color:#fcd34d}
+.disclaimer{
+  padding:12px 14px;border:1px solid var(--border);border-radius:10px;
+  background:#151c27;color:var(--muted);font-size:.88rem;margin-bottom:28px;
+}
+h2{
+  font-size:1.12rem;margin:32px 0 12px;padding-bottom:8px;
+  border-bottom:1px solid var(--border);font-weight:700;
+}
+h3{font-size:1rem;margin:20px 0 10px;font-weight:650}
+p,li{color:var(--text)}
+.muted{color:var(--muted)}
+.lead{font-size:.98rem;margin:0 0 16px}
+table{
+  width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 0 16px;
+  background:var(--card);border-radius:10px;overflow:hidden;border:1px solid var(--border);
+}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:var(--table-head);color:var(--muted);font-weight:600;white-space:nowrap}
+tr:last-child td{border-bottom:none}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+.chart{
+  display:block;width:100%;max-width:100%;height:auto;border-radius:12px;
+  border:1px solid var(--border);margin:12px 0 8px;background:#111;
+}
+.cap{font-size:.8rem;color:var(--muted);margin:0 0 18px}
+.cmd{
+  border-radius:14px;padding:16px 16px 14px;border:1px solid var(--border);
+  background:var(--card);margin-bottom:14px;
+}
+.cmd.open{border-color:var(--ok-bd);background:linear-gradient(180deg,var(--ok-bg),var(--card))}
+.cmd.watch{border-color:var(--watch-bd);background:linear-gradient(180deg,var(--watch-bg),var(--card))}
+.cmd .head{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:10px}
+.cmd .name{font-size:1.05rem;font-weight:700;margin:0}
+.pill{
+  font-size:.72rem;font-weight:700;padding:3px 8px;border-radius:999px;letter-spacing:.02em;
+}
+.pill.open{background:#14532d;color:#86efac}
+.pill.watch{background:#78350f;color:#fcd34d}
+.pill.alt{background:#1e3a5f;color:#93c5fd}
+.pill.off{background:#3f1d1d;color:#fca5a5}
+.kv{width:100%;border:none;background:transparent;margin:0}
+.kv th,.kv td{border:none;border-bottom:1px dashed #2a3544;padding:8px 0;background:transparent}
+.kv th{width:5.5em;color:var(--muted);font-weight:600}
+.kv tr:last-child th,.kv tr:last-child td{border-bottom:none}
+.rules{
+  padding:14px 16px;border-radius:12px;border:1px solid var(--border);
+  background:var(--card);margin:10px 0;
+}
+.rules ul,.rules ol{margin:8px 0 0;padding-left:1.2em}
+.rules li{margin:6px 0}
+.filter{
+  padding:12px 14px;border-radius:10px;border:1px solid #5c2a2a;
+  background:#2a1518;color:#fca5a5;font-size:.92rem;margin:14px 0 0;
+}
+footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:.8rem}
+.strong{font-weight:650;color:#fff}
+.review-note{font-size:.92rem;margin:8px 0 0;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topnav"><a href="index.html">← 复盘首页</a></div>
+
+  <header>
+    <h1>A股龙头战法 · 收盘复盘（情绪/资金/量能）</h1>
+    <p class="sub">交易日 <strong>2026-11-18</strong>（周三） · 目标交易日 <strong>2026-11-19</strong>（周四） · <span class="strong">退潮末期·跌停收敛</span></p>
+    <span class="badge danger">情绪：退潮</span>
+    <span class="badge warn">涨停 40 · 跌停 39</span>
+    <span class="badge">炸板率 37.5% · 晋级率 22.2% · 高度 4板</span>
+  </header>
+
+  <div class="disclaimer">
+    <strong>免责声明</strong>：本报告仅供参考学习，不构成投资建议，不代下单。市场有风险，行动与盈亏由你本人承担。
+  </div>
+
+  <h2>〇、昨日指令复盘（2026-11-17 → 今收盘）</h2>
+  <table>
+    <thead>
+      <tr><th>票</th><th>昨动作</th><th class="num">今收盘涨跌幅</th><th>判定</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>全市场</td><td>空仓观望</td><td class="num">跌停67→<strong>39</strong>明显收敛，但晋级仅22.2%、炸板率37.5%仍高，昨家电簇溃败</td><td>对</td></tr>
+      <tr><td>家电2板簇</td><td>只观察/不加</td><td class="num">九阳高开+3.11%后炸2收<strong>跌停−9.99%</strong>（额56.92亿）；长虹美菱竞价+9.92%后炸2收−0.63%；小熊炸2收+4.06%未晋级；海立+4.58%、北鼎−0.80%、华帝−0.83%</td><td>对</td></tr>
+      <tr><td>算力中军</td><td>不加</td><td class="num">局部反包：沪电午后炸3封+10%、深南午后+10%、景旺炸收+7.20%、胜宏+6.42%；旭创仅+0.84%、新易盛−1.12%，不是早盘干净主线回流</td><td>对（纪律）</td></tr>
+      <tr><td>高度</td><td>不加</td><td class="num">华东重机一字<strong>4板</strong>但额更小仅1.63亿；北纬炸4回封+9.99%（换手42%）；广百<strong>跌停</strong>、国统<strong>2连跌</strong>；天普继续停牌</td><td>对</td></tr>
+      <tr><td>脏板/跌停</td><td>不加/不抄</td><td class="num">有研+5.82%未晋级；顺钠−1.39%、北投−5.43%、瀛通−7.49%；阳光照明<strong>跌停</strong>；文投/横店<strong>2连跌</strong>，凯撒/金逸<strong>跌停</strong>，大东方<strong>4连跌</strong></td><td>对</td></tr>
+    </tbody>
+  </table>
+  <p class="review-note"><strong>一句话</strong>：五条指令全对——空仓躲开九阳跌停和家电簇溃败；算力午后有回流但封板偏脏，不加仍属纪律正确（华胜天成晋级2板是唯一例外，昨已定性反复票）。<br><strong>改进（未回测）</strong>：跌停从67收到39是积极变化，但只要晋级率仍低、炸板率不回落、新回流不是早盘干净连板，次日仍不把午后脏回封或中军反抽升级为试错。</p>
+
+  <h2>一、情绪阶段：退潮</h2>
+  <p class="lead">跌停明显收敛，但晋级仍弱、炸板率偏高、昨回流簇证伪。</p>
+  <p>涨停 <strong>40</strong>（周二36↑微升），跌停东财池 <strong>39</strong>（周二67↓明显收敛，仍是双位数；其中4连跌4家、3连跌5家、2连跌14家），晋级率 <strong>22.2%</strong>（8/36，较18.8%略升，但晋级里盛剑/全筑一字额不足0.5亿，泰嘉午后才封，华胜统计4/3属反复），炸板率 <strong>37.5%</strong>（24/64，周二35.7%↑略升仍偏高），红盘约 <strong>23.7%</strong>（东财涨跌分布：上涨1276 / 下跌3991 / 平盘113；乐咕已更新，活跃度24.44%）。指数分化（上证 <strong>+0.09%</strong>、创业板 <strong>+0.85%</strong>、科创50 <strong>+2.19%</strong>，中证1000 <strong>−0.65%</strong>），两市再缩约880亿至约13697亿。涨停池成交额约368亿，跌停池约231亿，涨停额反超跌停额（周二约233对392）。连板高度到 <strong>4板</strong>（仅华东重机一字，额更小仅1.63亿，没有3板）。定性仍是 <strong>退潮</strong>（末期有修复苗头）：不是冰点，更不是启动——跌停收敛是好事，但亏钱效应没有从结构上结束（家电簇直接砸出跌停，红盘仍只有约24%）。默认继续空仓，不追华东重机孤立小额4板，不抄九阳跌停，不追沪电/深南午后首板。</p>
+  <p class="muted">今日虽为退潮，但跌停明显收窄而非扩散，炸板率仅略升、算力出现回流而非主线撤出，<strong>不触发</strong>情绪→路线2风险过滤句。</p>
+
+  <h2>二、情绪与量能表</h2>
+  <table>
+    <thead>
+      <tr><th>指标</th><th class="num">数值</th><th>备注</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>涨停家数</td><td class="num"><strong>40</strong></td><td>已剔 ST / 北交所；东财涨停池 raw41→clean40（剔北交所广脉科技920924）</td></tr>
+      <tr><td>跌停家数</td><td class="num"><strong>39</strong></td><td>东财跌停池 raw40→clean39（剔北交所菊乐股份920309）；较周二67明显收敛，仍双位数。4连跌4家、3连跌5家、2连跌14家。含九阳股份、阳光照明、文投控股（2连）、横店影视（2连）、凯撒文化、金逸影视、广百股份、国统股份（2连）、大东方（4连）等</td></tr>
+      <tr><td>炸板家数</td><td class="num"><strong>24</strong></td><td>炸板池 clean24（raw24=clean24）</td></tr>
+      <tr><td>炸板率</td><td class="num"><strong>37.5%</strong></td><td>炸板/(涨停+炸板)=24/64；较周二35.7%略升，仍偏高</td></tr>
+      <tr><td>连板高度</td><td class="num"><strong>4板</strong></td><td>仅华东重机（工程机械，一字开、炸0，额仅1.63亿）——量更小且孤立，不当空间龙。没有3板</td></tr>
+      <tr><td>连板结构</td><td class="num">4板 <strong>1</strong> / 2板 <strong>7</strong> / 1板 <strong>32</strong></td><td>2板里盛剑/全筑一字额极小；真视通早封干净但仅1.86亿；华胜天成额34.12亿、炸0，但统计4/3；泰嘉午后13:27才封</td></tr>
+      <tr><td>昨日涨停数</td><td class="num"><strong>36</strong></td><td>previous 池 raw37→clean36（剔北交所佳先股份920489），与周二涨停池一致</td></tr>
+      <tr><td>晋级数 / 晋级率</td><td class="num"><strong>8 / 22.2%</strong></td><td>口径同前：previous∩今日涨停池；较18.8%略升，质量仍差（小额一字+反复票+午后晋级）</td></tr>
+      <tr><td>高度/主线样本</td><td class="num">—</td><td>华东重机孤立晋级到4板但额萎缩；昨家电2板簇零晋级且九阳跌停；晋级8家里没有昨主线。昨回流簇验证失败</td></tr>
+      <tr><td>两市成交额</td><td class="num">约 <strong>13697亿</strong></td><td>新浪：上证≈6502.32 + 深成≈7194.71（周二约14577↓，缩量约880）</td></tr>
+      <tr><td>涨停池成交额合计</td><td class="num">约 <strong>368亿</strong></td><td>仅涨停标的（周二约233↑，含沪电81.86亿、华胜34.12亿、深南26.67亿）；跌停池约231亿，涨停额反超</td></tr>
+      <tr><td>红盘占比</td><td class="num">约 <strong>23.7%</strong></td><td>东财涨停专题涨跌分布：上涨1276 / 下跌3991 / 平盘113（1276/5380）。乐咕今日已更新（2026-11-18 15:00）：上涨1277 / 下跌3823 / 平盘117，活跃度24.44%；红盘口径略异，并存注明</td></tr>
+    </tbody>
+  </table>
+  <img class="chart" src="assets/emotion_20261118.png" alt="2026-11-18 情绪快照：涨停/炸板/跌停、连板分布、涨停行业Top">
+  <p class="cap">附图：涨停 / 炸板 / 跌停 + 连板分布 + 行业集中。</p>
+  <p><strong>读表一句话</strong>：跌停明显收敛、涨停额反超，是退潮末期的积极变化；但晋级仍弱、炸板率不降、红盘仍约24%、昨家电簇直接砸死 = 还不能宣布修复。周四默认空仓。</p>
+
+  <h2>三、资金与主线（钱在哪）</h2>
+
+  <h3>溃败簇｜家电（昨相对最像样的回流，今日直接证伪）</h3>
+  <p>2板全部断板：九阳股份竞价+3.11%，9:49封后炸 <strong>2</strong>，收 <strong>−9.99%跌停</strong>，额 <strong>56.92亿</strong>（今日跌停池第一大额，开板3次）——高开没封住，直接砸死。长虹美菱竞价 <strong>+9.92%</strong> 接近涨停后炸 <strong>2</strong>，收 <strong>−0.63%</strong>；小熊电器炸 <strong>2</strong>，收 +4.06% 未晋级。海立股份 +4.58% 未封住，北鼎 −0.80%、华帝 −0.83%。跟风爱仕达/澳柯玛/春光科技/四川长虹只是小额首板，补不了2板断板。同链条日出东方继续 <strong>3连跌停</strong>。</p>
+  <p><strong>定位：昨退潮日那簇「相对整齐」的2板，今天已经证伪。周四不加、不抄九阳跌停，不接长虹美菱/小熊反抽。</strong></p>
+
+  <h3>回流苗头｜算力硬件 / PCB（午后首板，质量不够当新主线）</h3>
+  <p>涨停池里今天能看见这条线，而且是成交额最大的方向：沪电股份（元件）额 <strong>81.86亿</strong>（今日涨停池第一大额），竞价+4.66%，13:30才首次封，炸 <strong>3</strong>，14:50才回封——大额午后脏回封。深南电路（元件）13:19首次封、炸0，额26.67亿，相对干净但是午后首板。利通电子（消费电子，偏下游）炸1、13:14回封，额21.15亿。</p>
+  <p>中军跟风分化：景旺电子炸1收 <strong>+7.20%</strong>（额31.40亿）、生益电子炸1收 <strong>+18.53%</strong>（额22.61亿，未封住20cm）、胜宏科技 <strong>+6.42%</strong>、天孚通信 <strong>+4.60%</strong>、生益科技 +3.91%、英维克 +3.93%、海光 +3.59%、光迅 +3.68%、剑桥 +2.57%、浪潮 +2.64%、长飞 +2.22%。核心中军并没有同步大涨：中际旭创仅 <strong>+0.84%</strong>（额164.39亿）、东山精密 <strong>+0.06%</strong>、新易盛 <strong>−1.12%</strong>、源杰 <strong>−0.69%</strong>。</p>
+  <p><strong>定位：退潮里的局部反抽，不是早盘干净的主线回流。周四只观察、默认不加，不追沪电/深南高开或回封，不把景旺/生益电子的反抽当开仓理由。</strong></p>
+
+  <h3>脉冲簇｜IT服务（数量最多，质量杂，不当主仓）</h3>
+  <p>涨停7家，是家数第一：华胜天成晋级 <strong>2板</strong>，竞价+4.58%、9:55早封、炸0，额 <strong>34.12亿</strong>——封板看起来干净，但涨停统计 <strong>4/3</strong>，昨已把它放进「反复/孤立修复、不加」名单。真视通也是2板，9:30早封、炸0，额仅1.86亿。其余为首板：常山北明、美利云（炸1）、城地香江（炸1）、宏景科技（20cm，13:30才封，额20.21亿）、青云科技-U（13:17午后封）。</p>
+  <p><strong>定位：数量集中但高度不够、含反复票和午后板，不能升级为新主线。华胜即使晋级也不追。</strong></p>
+
+  <h3>高度与残留｜不当空间龙、不加</h3>
+  <ul>
+    <li><strong>4板</strong>：华东重机（工程机械，竞价一字+10.00%，早封干净，额仅 <strong>1.63亿</strong>、换手2.2%，比昨天2.28亿更小）——量能继续萎缩、题材孤立，<strong>不加</strong>。</li>
+    <li><strong>已断高度再回封</strong>：北纬科技昨断4板后今日竞价+6.04%，炸 <strong>4</strong>、13:00回封，换手 <strong>42%</strong>、统计6/5，典型断板后的脏首板，<strong>不加</strong>。广百股份一字 <strong>跌停</strong>；国统股份 <strong>2连跌停</strong>。天普股份继续<strong>停牌</strong>，若复牌也不追。</li>
+    <li>卡莱特（计算机设备）晋级2板、10:15封、炸0，20cm，但额仅3.95亿，孤立小额，<strong>不加</strong>。盛剑科技/全筑股份一字2板额都不足0.5亿，<strong>不加</strong>。</li>
+  </ul>
+
+  <h3>大额脏板、散首板与跌停残毒｜不加、不抄</h3>
+  <p>有研新材（昨大额脏首板）今日 +5.82% 未晋级，额58.99亿继续天量，<strong>不加</strong>。顺钠 −1.39%、北投 −5.43%、瀛通 −7.49%，脏2板全部断板。阳光照明收 <strong>跌停</strong>（开板12次）。游戏/影视继续溃败：文投控股、横店影视 <strong>2连跌停</strong>（基本一字），凯撒文化开板10次收 <strong>跌停</strong>，金逸影视收 <strong>跌停</strong>。老跌停股继续毒：大东方 <strong>4连跌</strong>，日出东方/金辰股份/通化金马 <strong>3连跌</strong>；惠发食品 −9.25% 接近跌停，襄阳轴承 −4.87%，华数传媒 −8.97%。<strong>不抄。</strong></p>
+
+  <h3>今日结构总评</h3>
+  <p>钱从「溃败的家电/游戏」部分转向「算力PCB午后回流」和「IT服务首板簇」，涨停额也反超了跌停额，这是今天和昨天最大的不同。但回流质量不够：沪电是炸3的午后大额回封，深南是午后首板，核心中军（旭创/东山/新易盛）并没有同步转强；IT服务数量多但含反复票。周四不能把这条线升级为主仓或试错仓。</p>
+
+  <h2>四、明日（2026-11-19 周四）可执行指令</h2>
+  <p>情绪 = <strong>退潮</strong>（末期有修复苗头）→ 专项总仓建议 <strong>0%（默认空仓，未回测）</strong>；同时持仓建议 <strong>0</strong> 只；<strong>不追华东重机孤立小额4板，不抄九阳跌停，不追沪电/深南午后首板，不接力华胜天成反复2板</strong>。</p>
+
+  <div class="cmd">
+    <div class="head">
+      <h3 class="name">指令1｜全市场</h3>
+      <span class="pill off">空仓观望</span>
+    </div>
+    <table class="kv">
+      <tr><th>代码+名称</th><td>—（不点名追昨涨停）</td></tr>
+      <tr><th>动作</th><td><strong>空仓观望</strong>（默认）</td></tr>
+      <tr><th>进场</th><td>无。周四竞价若昨涨停大量低开＞5%，或跌停重新走扩、指数快速跳水 → 全天不交易。</td></tr>
+      <tr><th>仓位</th><td><strong>0%</strong>（未回测）</td></tr>
+      <tr><th>原因</th><td>跌停虽从67收到39，但仍是双位数；晋级率22.2%质量差，炸板率37.5%不降，红盘仍约24%，昨家电簇直接砸出跌停。退潮未确认走出，优先保命。</td></tr>
+      <tr><th>作废</th><td>仅当盘中同时出现「跌停收窄到个位数、炸板率回落、算力或新板块≥8家早盘干净首板且中军同步」才允许把指令2升级为极轻观察/试错（否则维持空仓）。</td></tr>
+    </table>
+  </div>
+
+  <div class="cmd watch">
+    <div class="head">
+      <h3 class="name">指令2｜算力硬件 / PCB</h3>
+      <span class="pill watch">只观察 / 默认不加</span>
+    </div>
+    <table class="kv">
+      <tr><th>代码+名称</th><td>002463 沪电股份、002916 深南电路、603228 景旺电子、688183 生益电子、300476 胜宏科技、603083 剑桥科技、300394 天孚通信、600183 生益科技；中际旭创/东山精密/新易盛/海光/浪潮只记观察</td></tr>
+      <tr><th>动作</th><td><strong>只观察 / 默认不加</strong></td></tr>
+      <tr><th>进场</th><td>无开仓。即使竞价高开或回封，也不追板、不打前排（尤其沪电/深南高开＞3%或一字直接放弃）。记录竞价强弱、封板与中军是否同步，供跌停继续收敛后再议。</td></tr>
+      <tr><th>仓位</th><td><strong>0%</strong>（未回测）</td></tr>
+      <tr><th>原因</th><td>今天是退潮里的局部反抽：沪电炸3午后才封，深南是午后首板，旭创/东山/新易盛没有同步大涨，质量不够当新主线。</td></tr>
+      <tr><th>作废</th><td>—（升级条件见指令1，未回测）</td></tr>
+    </table>
+  </div>
+
+  <div class="cmd">
+    <div class="head">
+      <h3 class="name">指令3｜家电簇</h3>
+      <span class="pill off">不加（已证伪）</span>
+    </div>
+    <table class="kv">
+      <tr><th>代码+名称</th><td>002242 九阳股份、000521 长虹美菱、002959 小熊电器、600619 海立股份、300824 北鼎股份、002035 华帝股份</td></tr>
+      <tr><th>动作</th><td><strong>不加</strong>（不抄九阳跌停，不接长虹美菱/小熊反抽）</td></tr>
+      <tr><th>仓位</th><td><strong>0%</strong></td></tr>
+      <tr><th>原因</th><td>昨2板今日零晋级，九阳高开后直接跌停，长虹美菱高开接近涨停后断板。证伪的回流簇不再给第二次机会。</td></tr>
+    </table>
+  </div>
+
+  <div class="cmd">
+    <div class="head">
+      <h3 class="name">指令4｜高度、反复2板与脏回封</h3>
+      <span class="pill off">不加</span>
+    </div>
+    <table class="kv">
+      <tr><th>代码+名称</th><td>002685 华东重机；600410 华胜天成；002148 北纬科技；002187 广百股份、002205 国统股份已断板不加；605255 天普股份若复牌也不追；301391 卡莱特、603324 盛剑科技、603030 全筑股份小额2板不加</td></tr>
+      <tr><th>动作</th><td><strong>不加</strong></td></tr>
+      <tr><th>仓位</th><td><strong>0%</strong></td></tr>
+      <tr><th>原因</th><td>华东重机4板额仅1.63亿、工程机械孤立；华胜虽早封干净但是统计4/3反复票；北纬炸4换手42%是断板后的脏回封。退潮期不把孤立小额高度或反复票当空间龙。关注点：若华东竞价打开后直线砸 → 强化全天空仓。</td></tr>
+    </table>
+  </div>
+
+  <div class="cmd">
+    <div class="head">
+      <h3 class="name">指令5｜跌停与断板票</h3>
+      <span class="pill off">不抄底</span>
+    </div>
+    <table class="kv">
+      <tr><th>代码+名称</th><td>002242 九阳股份、600715 文投控股、603103 横店影视、002425 凯撒文化、002905 金逸影视、600261 阳光照明、002187 广百股份、002205 国统股份、600327 大东方、603366 日出东方、603396 金辰股份、000766 通化金马，以及今日其余跌停票；长虹美菱/小熊电器断板也不接反抽</td></tr>
+      <tr><th>动作</th><td><strong>不加 / 不抄底</strong></td></tr>
+      <tr><th>仓位</th><td><strong>0%</strong></td></tr>
+      <tr><th>原因</th><td>跌停虽收敛到39家，但仍有4连跌4家、3连跌5家；九阳是高开砸跌停，更不能当超跌反弹。</td></tr>
+    </table>
+  </div>
+
+  <div class="rules">
+    <strong>若你已持有短线票</strong>
+    <ul>
+      <li>算力中军若仍有仓：反抽减/清优先，不补、不换成沪电/深南或华胜天成。</li>
+      <li>家电2板、游戏/影视、北纬/广百/国统及4板以上非主线：有仓就减/清，无仓不加。</li>
+      <li>未开仓者：周四默认空仓，等跌停收敛到个位数、再出现早盘集中干净首板后再谈试错。</li>
+    </ul>
+  </div>
+
+  <h2>五、总原则</h2>
+  <div class="rules">
+    <ol>
+      <li><strong>仓位上限</strong>：短线专项总仓 <strong>0%（默认空仓，未回测）</strong>；同时持仓建议 <strong>0</strong> 只；若高度开板砸盘或跌停重新走扩 → 继续空仓。</li>
+      <li><strong>全天不交易</strong> 若出现任一：
+        <ul>
+          <li>竞价昨涨停股大量低开 <strong>＞5%</strong>；</li>
+          <li>华东重机等高度板竞价打开后直线砸；</li>
+          <li>跌停重新走扩且指数快速跳水；</li>
+          <li>任何计划外高开 <strong>＞3%</strong> 或一字（不追，含沪电/深南/华胜与华东重机）。</li>
+        </ul>
+      </li>
+      <li><strong>默认态度</strong>：退潮未确认走出 = <strong>空仓等待、不追算力午后回流、不抄已证伪的家电簇、不接力孤立小额4板或反复2板、不抄跌停</strong>。</li>
+      <li><strong>数据说明</strong>：akshare 东财涨停/昨涨停/炸板/跌停池，交易日 20261118；个股开高低收与两市成交额来自新浪 hq.sinajs.cn。晋级口径与此前一致：n_prev=previous清洁池，n_promote=与当日涨停清洁池代码交集（8/36）。红盘用东财涨停专题涨跌分布（上涨1276/下跌3991/平盘113）；乐咕 stock_market_activity_legu 已更新至 2026-11-18 15:00（上涨1277/下跌3823/平盘117，活跃度24.44%，涨停42/真实涨停39，跌停47/真实跌停33，口径与东财池不完全一致，已注明）。涨停池 raw41 含北交所广脉科技，清洁后40；跌停池 raw40 含北交所菊乐股份，清洁后39；previous raw37 含北交所佳先股份，清洁后36。天普股份继续停牌（新浪开盘价/成交额为0，收盘价停留在73.82）。数字见 data/*_20261118* / metrics_20261118.json。未编造。</li>
+    </ol>
+  </div>
+
+  <footer>
+    口径：主看情绪、资金、量能；进场用语为竞价高低开 / 封板·回封·炸板 / 板块资金 / 量能是否跟上。与股指衍生品策略无关（今日不触发路线2风险过滤句）。<br>
+    <a href="index.html">返回复盘首页</a>
+  </footer>
+</div>
+</body>
+</html>
