@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2026-11-23 · 修复偏强·主线未成形｜A股龙头情绪资金复盘</title>
+<meta name="description" content="2026-11-23 收盘复盘（情绪/资金/量能）：修复偏强、涨停145、跌停3、晋级率57.1%、炸板率14.2%；明日指令：汽车零部拓普条件开多≤8% / 九阳与瑞芯微只观察、不接力5板、不抄跌停">
+<style>
+:root{
+  --bg:#0f1419;--card:#1a2332;--border:#2a3544;--text:#e7ecf3;--muted:#8b9bb4;
+  --accent:#3b82f6;--ok:#22c55e;--ok-bg:#12261c;--ok-bd:#1e4d36;
+  --watch:#f59e0b;--watch-bg:#2a2110;--watch-bd:#5c4518;
+  --danger:#ef4444;--table-head:#151c27;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  background:var(--bg);color:var(--text);line-height:1.65;font-size:15.5px;
+}
+.wrap{max-width:820px;margin:0 auto;padding:24px 16px 56px}
+a{color:var(--accent)}
+.topnav{margin-bottom:18px;font-size:.9rem}
+.topnav a{text-decoration:none}
+header h1{font-size:1.45rem;margin:0 0 6px;font-weight:700}
+header .sub{color:var(--muted);margin:0 0 14px;font-size:.92rem}
+.badge{
+  display:inline-block;padding:3px 10px;border-radius:999px;font-size:.78rem;font-weight:650;
+  background:#1e3a5f;color:#93c5fd;margin-right:6px;margin-bottom:6px;
+}
+.badge.ok{background:#14532d;color:#86efac}
+.badge.danger{background:#3f1d1d;color:#fca5a5}
+.badge.warn{background:#78350f;color:#fcd34d}
+.disclaimer{
+  padding:12px 14px;border:1px solid var(--border);border-radius:10px;
+  background:#151c27;color:var(--muted);font-size:.88rem;margin-bottom:28px;
+}
+h2{
+  font-size:1.12rem;margin:32px 0 12px;padding-bottom:8px;
+  border-bottom:1px solid var(--border);font-weight:700;
+}
+h3{font-size:1rem;margin:20px 0 10px;font-weight:650}
+p,li{color:var(--text)}
+.muted{color:var(--muted)}
+.lead{font-size:.98rem;margin:0 0 16px}
+table{
+  width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 0 16px;
+  background:var(--card);border-radius:10px;overflow:hidden;border:1px solid var(--border);
+}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
+th{background:var(--table-head);color:var(--muted);font-weight:600;white-space:nowrap}
+tr:last-child td{border-bottom:none}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+.v-ok{color:#86efac;font-weight:700}
+.v-bad{color:#fca5a5;font-weight:700}
+.v-mid{color:#fcd34d;font-weight:700}
+.chart{
+  display:block;width:100%;max-width:100%;height:auto;border-radius:12px;
+  border:1px solid var(--border);margin:12px 0 8px;background:#111;
+}
+.cap{font-size:.8rem;color:var(--muted);margin:0 0 18px}
+.cmd{
+  border-radius:14px;padding:16px 16px 14px;border:1px solid var(--border);
+  background:var(--card);margin-bottom:14px;
+}
+.cmd.open{border-color:var(--ok-bd);background:linear-gradient(180deg,var(--ok-bg),var(--card))}
+.cmd.watch{border-color:var(--watch-bd);background:linear-gradient(180deg,var(--watch-bg),var(--card))}
+.cmd .head{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:10px}
+.cmd .name{font-size:1.05rem;font-weight:700;margin:0}
+.pill{
+  font-size:.72rem;font-weight:700;padding:3px 8px;border-radius:999px;letter-spacing:.02em;
+}
+.pill.open{background:#14532d;color:#86efac}
+.pill.watch{background:#78350f;color:#fcd34d}
+.pill.alt{background:#1e3a5f;color:#93c5fd}
+.pill.off{background:#3f1d1d;color:#fca5a5}
+.kv{width:100%;border:none;background:transparent;margin:0}
+.kv th,.kv td{border:none;border-bottom:1px dashed #2a3544;padding:8px 0;background:transparent}
+.kv th{width:5.5em;color:var(--muted);font-weight:600}
+.kv tr:last-child th,.kv tr:last-child td{border-bottom:none}
+.rules{
+  padding:14px 16px;border-radius:12px;border:1px solid var(--border);
+  background:var(--card);margin:10px 0;
+}
+.rules ul,.rules ol{margin:8px 0 0;padding-left:1.2em}
+.rules li{margin:6px 0}
+.filter{
+  padding:12px 14px;border-radius:10px;border:1px solid #5c2a2a;
+  background:#2a1518;color:#fca5a5;font-size:.92rem;margin:14px 0 0;
+}
+footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:.8rem}
+.strong{font-weight:650;color:#fff}
+.review-note{font-size:.92rem;margin:8px 0 0;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topnav"><a href="index.html">← 复盘首页</a></div>
+
+  <header>
+    <h1>A股龙头战法 · 收盘复盘（情绪/资金/量能）</h1>
+    <p class="sub">交易日 <strong>2026-11-23</strong>（周一） · 目标交易日 <strong>2026-11-24</strong>（周二） · <span class="strong">修复偏强·主线未成形</span></p>
+    <span class="badge ok">情绪：修复</span>
+    <span class="badge ok">涨停 145 · 跌停 3</span>
+    <span class="badge warn">炸板率 14.2% · 晋级率 57.1% · 高度 5板</span>
+  </header>
+
+  <div class="disclaimer">
+    <strong>免责声明</strong>：本报告仅供参考学习，不构成投资建议，不代下单。市场有风险，行动与盈亏由你本人承担。
+  </div>
+
+  <h2>〇、昨日指令复盘（2026-11-20 → 今收盘）</h2>
+  <table>
+    <thead>
+      <tr><th>票</th><th>昨动作</th><th class="num">今收盘涨跌幅</th><th>判定</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>全市场</td><td>空仓观望</td><td class="num">中证1000 <strong>+2.90%</strong>（低开−1.51%后翻红），红盘约5.2%→<strong>84.8%</strong>，跌停58→<strong>3</strong>，晋级13.0%→<strong>57.1%</strong></td><td class="v-bad">错</td></tr>
+      <tr><td>算力PCB</td><td>只观察/不加</td><td class="num">中京一字开收3板但炸6、额25.87亿；沪电+2.96%、深南−0.90%、景旺+6.84%中军未封；超声+7.46%未封</td><td class="v-ok">对</td></tr>
+      <tr><td>家电/九阳</td><td>不加</td><td class="num">九阳高开+1.21%、09:44封、炸0，额25.19亿涨停；小熊−0.33%、爱仕达+0.98%、海立+3.91%簇仍不齐</td><td class="v-mid">部分对</td></tr>
+      <tr><td>高度/反复</td><td>不加</td><td class="num">盛剑低开−0.97%晋级5板额8.08炸0；真视通高开晋级5板额18.52炸6；华东重机高开+6.22%收首板</td><td class="v-ok">对</td></tr>
+      <tr><td>跌停</td><td>不抄</td><td class="num">跌停58→3；昨跌停有反抽（文投+4.01%、阳光+6.01%）但不是干净反包主线</td><td class="v-ok">对</td></tr>
+    </tbody>
+  </table>
+  <p class="review-note"><strong>一句话</strong>：空仓默认错了——错过低开后的系统性修复；九阳不加部分对（簇仍不齐，但错过了当日最早的大额干净首板）；不追中京一字、不接力小额/脏高度、不抄跌停这三条仍对。<br><strong>改进（未回测）</strong>：近冰点后的下一交易日，若竞价未触发「大量低开＞5%」，开盘后跌停迅速收敛、红盘快速转强，就把「全天空仓」改成「极轻试错」，优先早盘干净大额首板，不必等中军封板才允许动手。</p>
+
+  <h2>一、情绪阶段：修复</h2>
+  <p class="lead">偏强，主线尚未干净成形。</p>
+  <p>涨停 <strong>145</strong>（周五28大幅扩容），跌停东财池 <strong>3</strong>（周五58骤收到个位数；其中3连跌1家、2连跌1家），晋级率 <strong>57.1%</strong>（16/28，周五13.0%大幅抬升，但质量参差），炸板率 <strong>14.2%</strong>（24/169，周五20.0%略降），红盘约 <strong>84.8%</strong>（东财涨跌分布：上涨4562 / 下跌700 / 平盘117；较周五约5.2%大幅修复）。指数低开高走（上证开−0.86%收 <strong>+0.15%</strong>、创业板 <strong>+3.08%</strong>、中证1000 <strong>+2.90%</strong>，科创50 <strong>−0.26%</strong>仍略弱），两市放量约1307亿至约15529亿——是回流放量，不是下跌放量。涨停池成交额约1069亿，跌停池约2亿，涨停额大幅反超。连板高度回到 <strong>5板</strong>（真视通脏回封、盛剑额偏小），另有中京电子3板但炸6，撑不起空间龙。定性是 <strong>修复（偏强）</strong>：不是退潮（广度、跌停、晋级同步翻好），也先不标成启动（早盘干净大额首板很少，汽车零部只是数量堆、中军偏晚，高度质量差）。默认从空仓改为极轻试错，不追高开，不接力5板，不抄跌停。</p>
+  <p class="muted">今日为修复，不满足「高潮/退潮 + 跌停扩散 / 炸板率飙升 / 主线资金撤出」的加推条件，<strong>不写</strong>情绪→路线2风险过滤句。</p>
+
+  <h2>二、情绪与量能表</h2>
+  <table>
+    <thead>
+      <tr><th>指标</th><th class="num">数值</th><th>备注</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>涨停家数</td><td class="num"><strong>145</strong></td><td>已剔 ST / 北交所；东财涨停池 raw146→clean145（剔北交所捷众科技920690）</td></tr>
+      <tr><td>跌停家数</td><td class="num"><strong>3</strong></td><td>东财跌停池 raw3=clean3（无需再剔）；较周五58骤收。3连跌1家（华达科技一字），2连跌1家（正川股份），另彩蝶实业开板27次终跌停</td></tr>
+      <tr><td>炸板家数</td><td class="num"><strong>24</strong></td><td>炸板池 clean24（raw24=clean24）</td></tr>
+      <tr><td>炸板率</td><td class="num"><strong>14.2%</strong></td><td>炸板/(涨停+炸板)=24/169；较周五20.0%略降</td></tr>
+      <tr><td>连板高度</td><td class="num"><strong>5板</strong></td><td>真视通（IT服务Ⅱ，09:25封后炸6、14:54回封，额18.52亿、换手60%）、盛剑科技（环保设备，13:03封、炸0，额8.08亿）——一脏一小额，不当空间龙</td></tr>
+      <tr><td>连板结构</td><td class="num">5板 <strong>2</strong> / 3板 <strong>1</strong> / 2板 <strong>13</strong> / 1板 <strong>129</strong></td><td>3板只有中京电子（元件，一字开后炸6、11:07回封，额25.87亿），偏脏</td></tr>
+      <tr><td>昨日涨停数</td><td class="num"><strong>28</strong></td><td>晋级分母用周五官方清洁池28。东财 previous 池 raw28=clean28，与之一致</td></tr>
+      <tr><td>晋级数 / 晋级率</td><td class="num"><strong>16 / 57.1%</strong></td><td>口径：周五清洁池∩今日涨停池（16/28）。晋级含真视通/盛剑5板、中京3板及13只2板；其中干净偏少，脏的不少（中京炸6、真视通炸6、东方海洋炸13、冰山冷热炸4、大东方炸6）。另国光股份炸板未晋级，无昨日涨停直接跌停</td></tr>
+      <tr><td>高度/主线样本</td><td class="num">—</td><td>高度5板质量差；汽车零部22家数量最多但中军拓普午后才封；元件3板脏、PCB中军未封；九阳是早盘唯一像样的大额干净首板，簇不齐。广度已修复，结构还不是启动</td></tr>
+      <tr><td>两市成交额</td><td class="num">约 <strong>15529亿</strong></td><td>新浪：上证≈7385.0 + 深成≈8143.8（周五约14222↑，放量约1307；回流放量）。东财指数接口本次502，点位与成交额用新浪</td></tr>
+      <tr><td>涨停池成交额合计</td><td class="num">约 <strong>1069亿</strong></td><td>仅涨停标的（周五约200大幅增加；最大额宇树科技46.77亿属午后20cm首板）；跌停池约2亿，涨停额大幅反超</td></tr>
+      <tr><td>红盘占比</td><td class="num">约 <strong>84.8%</strong></td><td>东财涨停专题涨跌分布已更新（qdate=20261123）：上涨4562 / 下跌700 / 平盘117（4562/5379=84.81%）。乐咕已更新（2026-11-23 15:00）：上涨4306 / 下跌780 / 平盘127（4306/5213=82.60%），活跃度82.43%；乐咕涨停151/真实144、跌停7/真实2，与东财池145/3口径不完全一致，已注明</td></tr>
+    </tbody>
+  </table>
+  <img class="chart" src="assets/emotion_20261123.png" alt="2026-11-23 情绪快照：涨停/炸板/跌停、连板分布、涨停行业Top">
+  <p class="cap">附图：涨停 / 炸板 / 跌停 + 连板分布 + 行业集中。</p>
+  <p><strong>读表一句话</strong>：跌停收到3、红盘回到约85%、晋级57%，广度已经从近冰点翻成修复；但高度质量差、早盘干净大额首板很少、钱散在汽车零部的数量堆里，还不是启动。</p>
+
+  <h2>三、资金与主线（钱在哪）</h2>
+
+  <h3>总评｜修复偏强，钱很散，还没有干净主线</h3>
+  <p>周末稳市组合拳之后，周一是低开高走的修复：红盘从约5%拉到约85%，跌停从58收到3，涨停从28扩到145，涨停池额约1069亿反超跌停池约2亿。钱回来了，但辨识不够——汽车零部22家数量最多，高度却只有两只质量差的2板，中军拓普午后才封；10点前干净首板只有6只，大额的几乎只有九阳；高度回到5板，真视通炸6、盛剑额偏小。先记修复，不升级成启动。</p>
+
+  <h3>观察级｜汽车零部（数量龙，中军偏晚；默认可极轻试错）</h3>
+  <p>22家涨停、额合计约150亿，是今日涨停集中度最高的题材。中军：<strong>拓普集团</strong>平开 <strong>+0.81%</strong>，13:21封、炸 <strong>1</strong> 立即回封，收 +10.00%，额 <strong>27.61亿</strong>——午后中军首板，略脏。跟风里襄阳轴承14:30封、炸0、额24.48亿偏晚；新泉股份高开+2.69%收涨停、额11.60亿、炸2；浙江世宝炸4、14:52才回封，偏脏；双环传动14:00封后炸板，收 <strong>+9.37%</strong> 未封死。2板只有长华集团（额2.16亿、炸2）和克来机电（额0.37亿、一字小额），都不当空间龙。辨识：数量龙，不是趋势龙/空间龙。</p>
+
+  <h3>只观察｜九阳是早盘质量最好的大额干净首板，家电簇仍不齐</h3>
+  <p><strong>九阳股份</strong>高开 <strong>+1.21%</strong>，09:44封、炸 <strong>0</strong>，收 +10.01%，额 <strong>25.19亿</strong>——10点前唯一像样的大额干净首板。但小熊收 <strong>−0.33%</strong>、爱仕达 <strong>+0.98%</strong>、长虹美菱 <strong>−1.16%</strong>，海立只 <strong>+3.91%</strong>，簇没有同步。九阳可记为修复样本，不是家电主线。</p>
+
+  <h3>只观察｜元件/PCB 与半导体：中军未形成封板主线</h3>
+  <p><strong>中京电子</strong>一字开、炸 <strong>6</strong> 才回封3板，额25.87亿——不当空间龙。东晶电子2板也炸4。散首板有风华高科（14:08封、额23.18亿）、崇达技术（炸1、额18.65亿）、世运电路、奥士康、移远通信（13:17封、额18.42亿）。中军仍未封：沪电 <strong>+2.96%</strong>、深南 <strong>−0.90%</strong>、景旺 <strong>+6.84%</strong>；算力里旭创 <strong>+6.10%</strong>、新易盛 <strong>+9.92%</strong> 接近但未封，天孚 <strong>+13.82%</strong>（20cm）也不是主板封板簇。半导体里 <strong>瑞芯微</strong>低开 <strong>−2.03%</strong>、11:07干净封、炸0，额 <strong>36.55亿</strong>，质量好，但是孤立中军首板，先只观察、不追。</p>
+
+  <h3>不加｜高度5板、脏晋级、午后脉冲</h3>
+  <p>真视通5板炸6、额18.52亿、换手60%，脏回封，不当空间龙。盛剑5板炸0但额仅8.08亿，偏小。冰山冷热2板额28.89亿却炸4、14:51才回封；东方海洋炸13；大东方炸6；华东重机高开 <strong>+6.22%</strong> 收首板，不追次日。<strong>宇树科技</strong>（688836）低开−1.36%、13:44封20cm、额 <strong>46.77亿</strong>，是今日最大额涨停，但属于午后脉冲，不当明日追高目标。</p>
+
+  <h3>不抄｜3只跌停是残留，不是新亏钱效应</h3>
+  <p>华达科技一字3连跌（汽车零部里的反向个股）、正川股份2连跌、彩蝶实业开板27次终跌停。跌停额仅约2亿，不构成扩散，也不构成抄底理由。</p>
+
+  <h3>今日结构总评</h3>
+  <ul>
+    <li>钱从跌停池回到了涨停池，广度已经修复。</li>
+    <li>还没有可确认的启动主线：汽车零部是数量龙、中军偏晚；高度质量差；早盘干净大额首板稀缺。</li>
+    <li>明日从空仓改为极轻试错，只做竞价不过热的中军回封/弱转强，不追高。</li>
+  </ul>
+
+  <h2>四、明日（2026-11-24 周二）可执行指令</h2>
+  <p>情绪 = <strong>修复（偏强，主线未干净成形）</strong> → 专项总仓建议 <strong>≤8%（极轻试错，未回测）</strong>；同时持仓建议 <strong>0–1</strong> 只；<strong>不追高开＞3%或一字，不接力5板，不追中京3板脏回封，不抄跌停。</strong></p>
+
+  <div class="cmd open">
+    <div class="head">
+      <span class="pill open">开多 · 条件 / 极轻</span>
+      <h3 class="name">指令1｜汽车零部（拓普集团）</h3>
+    </div>
+    <table class="kv">
+      <tr><th>标的</th><td>首选 <strong>601689 拓普集团</strong>（中军首板）；跟风只记观察：000678 襄阳轴承、603179 新泉股份。排除浙江世宝（炸4）、长华集团/克来机电（小额或脏2板）、双环传动（炸板未封死）</td></tr>
+      <tr><th>动作</th><td><strong>条件开多</strong>（默认只观察；仅拓普满足进场才开，不追板）</td></tr>
+      <tr><th>进场</th><td>拓普竞价平开～小高开 <strong>＜3%</strong> 且未一字，开后能守住或回封干净、同向有跟风未炸扩散 → 极轻开多。低开＞3%且快速砸、或高开＞3%/一字 → <strong>不加</strong>。不打前排、不追回封已经大幅转强后的高位。</td></tr>
+      <tr><th>止损</th><td>开板不回封，或板块中军走弱、跟风炸板扩散 → 走</td></tr>
+      <tr><th>目标</th><td>看能否带出「中军+跟风」的启动迹象，不预支主升</td></tr>
+      <tr><th>仓位</th><td>单票 <strong>≤8%</strong>（未回测）；同时只做这一个方向</td></tr>
+      <tr><th>原因</th><td>汽车零部是今日数量最集中的题材，但中军来得晚、高度质量差，只能极轻试错，不能当已确认主线。</td></tr>
+      <tr><th>作废</th><td>拓普高开＞3%或一字直接放弃；竞价同板块多数低开＞3%；开盘后跟风大面积炸板；跌停重新走扩。</td></tr>
+    </table>
+  </div>
+
+  <div class="cmd watch">
+    <div class="head">
+      <span class="pill watch">只观察 · 默认不加</span>
+      <h3 class="name">指令2｜九阳与家电簇</h3>
+    </div>
+    <table class="kv">
+      <tr><th>标的</th><td><strong>002242 九阳股份</strong>；600619 海立股份只记中军观察；小熊/爱仕达/长虹美菱/北鼎/华帝不纳入开仓候选</td></tr>
+      <tr><th>动作</th><td><strong>只观察 / 默认不加</strong></td></tr>
+      <tr><th>进场</th><td>无开仓。不追九阳高开＞3%或一字。即使低开回封，也要等海立等中军同步转强才允许把观察升为极轻（否则维持不加，未回测）。与指令1合计仍 ≤8%、只持 0–1 只。</td></tr>
+      <tr><th>仓位</th><td>默认 <strong>0%</strong>（未回测）</td></tr>
+      <tr><th>原因</th><td>九阳是今日最早的大额干净首板，但家电簇仍不齐，不能把单票修复当成板块启动。</td></tr>
+      <tr><th>作废</th><td>—（升级条件见上，未回测）</td></tr>
+    </table>
+  </div>
+
+  <div class="cmd watch">
+    <div class="head">
+      <span class="pill watch">只观察 · 不加</span>
+      <h3 class="name">指令3｜瑞芯微 / 元件PCB</h3>
+    </div>
+    <table class="kv">
+      <tr><th>标的</th><td><strong>603893 瑞芯微</strong>；002579 中京电子、000823 超声电子、002463 沪电股份、002916 深南电路、603228 景旺电子；风华高科/崇达技术/世运电路/移远通信只记散首板观察</td></tr>
+      <tr><th>动作</th><td><strong>只观察 / 不加</strong>（不追瑞芯微高开，不接力中京3板，不把散首板当主仓）</td></tr>
+      <tr><th>进场</th><td>无开仓。记录瑞芯微竞价强弱与是否回封，以及沪电/深南/景旺、旭创/新易盛是否同步封板。</td></tr>
+      <tr><th>仓位</th><td><strong>0%</strong>（未回测）</td></tr>
+      <tr><th>原因</th><td>瑞芯微质量好但是孤立中军首板；中京炸6不当空间龙；PCB/算力中军今日仍未封。</td></tr>
+      <tr><th>作废</th><td>—</td></tr>
+    </table>
+  </div>
+
+  <div class="cmd watch">
+    <div class="head">
+      <span class="pill off">不加</span>
+      <h3 class="name">指令4｜高度5板、脏晋级、午后脉冲</h3>
+    </div>
+    <table class="kv">
+      <tr><th>标的</th><td>002771 真视通、603324 盛剑科技、002579 中京电子；000530 冰山冷热、002086 东方海洋、600327 大东方；002685 华东重机；<strong>688836 宇树科技</strong></td></tr>
+      <tr><th>动作</th><td><strong>不加</strong>（不接力5板，不追中京/冰山脏回封，不追宇树次日高开或一字，不接华东重机高开首板）</td></tr>
+      <tr><th>仓位</th><td><strong>0%</strong></td></tr>
+      <tr><th>原因</th><td>真视通炸6、盛剑额小，都不是空间龙；宇树虽是今日最大额涨停，但是午后20cm脉冲，次日最容易被追高。</td></tr>
+    </table>
+  </div>
+
+  <div class="cmd watch">
+    <div class="head">
+      <span class="pill off">不抄</span>
+      <h3 class="name">指令5｜剩余跌停</h3>
+    </div>
+    <table class="kv">
+      <tr><th>标的</th><td>603358 华达科技、603976 正川股份、603073 彩蝶实业</td></tr>
+      <tr><th>动作</th><td><strong>不加 / 不抄底</strong></td></tr>
+      <tr><th>仓位</th><td><strong>0%</strong></td></tr>
+      <tr><th>原因</th><td>跌停已收到3家，属于残留个股，不是跌停池反包信号。</td></tr>
+    </table>
+  </div>
+
+  <div class="rules">
+    <strong>若你已持有短线票</strong>
+    <ul>
+      <li>若因故已持中京电子、盛剑、真视通或其它脏高度：反抽减/清优先，不补、不换成宇树或散首板。</li>
+      <li>未开仓者：周二默认按指令1的条件执行，不满足就继续空仓，不要因为昨天错过修复而改成追高。</li>
+    </ul>
+  </div>
+
+  <h2>五、总原则</h2>
+  <div class="rules">
+    <ol>
+      <li><strong>仓位上限</strong>：短线专项总仓 <strong>≤8%（极轻试错，未回测）</strong>；同时持仓建议 <strong>0–1</strong> 只；若高度开板砸盘或跌停重新走扩 → 回到空仓。</li>
+      <li><strong>全天不交易</strong> 若出现任一：竞价昨涨停股大量低开 <strong>＞5%</strong>；真视通/盛剑等高度板竞价打开后直线砸；跌停重新走扩且指数快速跳水；任何计划外高开 <strong>＞3%</strong> 或一字（不追，含拓普、九阳、瑞芯微、宇树、中京与小额5板）。</li>
+      <li><strong>默认态度</strong>：修复 ≠ 启动。钱很散，汽车零部只是数量最多，不是干净主线。能做的只有极轻、低吸/回封，禁止追高。</li>
+      <li><strong>数据说明</strong>：akshare 东财涨停/昨涨停/炸板/跌停池，交易日 20261123；个股开高低收与两市成交额来自新浪 hq.sinajs.cn（东财指数接口本次502，点位与新浪不一致时以新浪为准）。晋级分母用周五官方清洁池28（16/28=57.1%），与东财 previous 池 raw28=clean28 一致。红盘用东财涨停专题涨跌分布（上涨4562/下跌700/平盘117=5379，84.81%）；乐咕已更新至 2026-11-23 15:00（上涨4306/下跌780/平盘127，活跃度82.43%，涨停151/真实涨停144，跌停7/真实跌停2），口径略异已并存注明。涨停池清洁后仅剔北交所捷众科技1只；炸板/跌停池无需再剔 ST/北交所。数字见 data/*_20261123* / metrics_20261123.json。未编造。</li>
+    </ol>
+  </div>
+
+  <footer>
+    口径：主看情绪、资金、量能；进场用语为竞价高低开 / 封板·回封·炸板 / 板块资金 / 量能是否跟上。与股指衍生品策略无关（今日不触发路线2风险过滤句）。<br>
+    数据源：akshare 东财涨停系列 · 新浪行情 · 账号 Pages：nandawys/stock-leader
+  </footer>
+</div>
+</body>
+</html>
